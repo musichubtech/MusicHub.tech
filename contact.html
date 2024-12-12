@@ -8,20 +8,38 @@
 </head>
 <body>
     <header>
+        <img src="assets/logo.png" alt="MusicHub.tech Logo" width="100">
         <h1>Contact Us</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>Get in Touch</h2>
-            <p>Email us at: <a href="mailto:contact@musichub.tech">contact@musichub.tech</a></p>
+            <p>
+                Have questions, suggestions, or want to collaborate? Reach out to us using the form below or via our email.
+            </p>
+
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 MusicHub.tech</p>
+        <p>&copy; 2024 MusicHub.tech. All rights reserved.</p>
     </footer>
 </body>
 </html>
