@@ -1,0 +1,2 @@
+Temporary file to create the assets folder.
+Create assets folder with temporary file
