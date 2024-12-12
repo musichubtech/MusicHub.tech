@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #121212;
-    color: #fff;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #6A0DAD;
+    background-color: #007BFF;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -30,7 +30,7 @@ main {
 }
 
 footer {
-    background-color: #121212;
+    background-color: #343A40;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -41,7 +41,7 @@ footer {
 
 a.cta-button {
     display: inline-block;
-    background-color: #FF6F00;
+    background-color: #00CFCF;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -50,5 +50,5 @@ a.cta-button {
 }
 
 a.cta-button:hover {
-    background-color: #6A0DAD;
+    background-color: #007BFF;
 }
