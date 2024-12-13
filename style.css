@@ -1,7 +1,15 @@
 /* Palette de couleurs */
+:root {
+    --gray-purple: #C6C4DA;
+    --deep-blue: #022DAD;
+    --light-yellow: #FFE266;
+    --light-orange: #FBB473;
+}
+
+/* Style général du corps */
 body {
-    background-color: #f5f5f5;     /* Couleur de fond légère */
-    color: #333;                   /* Couleur du texte principale */
+    background-color: var(--gray-purple);
+    color: var(--deep-blue);
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,18 +17,19 @@ body {
 
 /* Liens */
 a {
-    color: #1e90ff;                /* Bleu vif pour les liens */
+    color: var(--deep-blue);
     text-decoration: none;
 }
 
 a:hover {
+    color: var(--light-yellow);
     text-decoration: underline;
 }
 
 /* Header */
 header {
-    background-color: #1e90ff;     /* Bleu vif */
-    color: #fff;                   /* Texte blanc */
+    background-color: var(--deep-blue);
+    color: var(--light-yellow);
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -39,13 +48,13 @@ header h1 {
 }
 
 nav a {
-    color: #fff;
+    color: var(--light-yellow);
     margin-left: 15px;
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: var(--light-orange);
 }
 
 /* Main Content */
@@ -54,22 +63,22 @@ main {
 }
 
 section {
-    background-color: #fff;
+    background-color: var(--light-yellow);
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;            /* Coins arrondis */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    color: #1e90ff;
+    color: var(--deep-blue);
     margin-top: 0;
 }
 
 /* Footer */
 footer {
-    background-color: #1e90ff;
-    color: #fff;
+    background-color: var(--deep-blue);
+    color: var(--light-yellow);
     text-align: center;
     padding: 10px 0;
     position: relative;
