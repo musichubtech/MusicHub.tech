@@ -2,14 +2,14 @@
 :root {
     --gray-purple: #C6C4DA;
     --deep-blue: #022DAD;
-    --light-yellow: #FFE266;
-    --light-orange: #FBB473;
+    --light-gray: #BFCBD6;
+    --white: #FFFFFF;
 }
 
 /* Style général du corps */
 body {
     background-color: var(--gray-purple);
-    color: var(--deep-blue);
+    color: var(--white);
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -17,29 +17,23 @@ body {
 
 /* Liens */
 a {
-    color: var(--deep-blue);
+    color: var(--light-gray);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--light-yellow);
+    color: var(--deep-blue);
     text-decoration: underline;
 }
 
 /* Header */
 header {
     background-color: var(--deep-blue);
-    color: var(--light-yellow);
+    color: var(--gray-purple);
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-header img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 20px;
 }
 
 header h1 {
@@ -47,14 +41,15 @@ header h1 {
     font-size: 24px;
 }
 
+/* Navigation */
 nav a {
-    color: var(--light-yellow);
+    color: var(--gray-purple);
     margin-left: 15px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: var(--light-orange);
+    color: var(--light-gray);
 }
 
 /* Main Content */
@@ -63,11 +58,12 @@ main {
 }
 
 section {
-    background-color: var(--light-yellow);
+    background-color: var(--light-gray);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: var(--deep-blue);
+    box-shadow: none;
 }
 
 section h2 {
@@ -78,7 +74,7 @@ section h2 {
 /* Footer */
 footer {
     background-color: var(--deep-blue);
-    color: var(--light-yellow);
+    color: var(--gray-purple);
     text-align: center;
     padding: 10px 0;
     position: relative;
