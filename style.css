@@ -2,8 +2,6 @@
 :root {
     --gray-purple: #C6C4DA;
     --deep-blue: #022DAD;
-    --light-gray: #BFCBD6;
-    --white: #FFFFFF;
     --light-yellow: #FFE266;
     --light-orange: #FBB473;
 }
@@ -11,7 +9,7 @@
 /* Style général du corps */
 body {
     background-color: var(--gray-purple);
-    color: var(--white);
+    color: var(--deep-blue);
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -19,23 +17,29 @@ body {
 
 /* Liens */
 a {
-    color: var(--light-gray);
+    color: var(--deep-blue);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--light-orange);
+    color: var(--light-yellow);
     text-decoration: underline;
 }
 
 /* Header */
 header {
     background-color: var(--deep-blue);
-    color: var(--gray-purple);
+    color: var(--light-yellow);
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
 }
 
 header h1 {
@@ -43,9 +47,8 @@ header h1 {
     font-size: 24px;
 }
 
-/* Navigation */
 nav a {
-    color: var(--gray-purple);
+    color: var(--light-yellow);
     margin-left: 15px;
     font-weight: bold;
 }
@@ -67,16 +70,15 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Titres avec touche de jaune */
 section h2 {
-    color: var(--light-orange);
+    color: var(--deep-blue);
     margin-top: 0;
 }
 
 /* Footer */
 footer {
     background-color: var(--deep-blue);
-    color: var(--gray-purple);
+    color: var(--light-yellow);
     text-align: center;
     padding: 10px 0;
     position: relative;
