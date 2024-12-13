@@ -4,6 +4,8 @@
     --deep-blue: #022DAD;
     --light-gray: #BFCBD6;
     --white: #FFFFFF;
+    --light-yellow: #FFE266;
+    --light-orange: #FBB473;
 }
 
 /* Style général du corps */
@@ -22,7 +24,7 @@ a {
 }
 
 a:hover {
-    color: var(--deep-blue);
+    color: var(--light-orange);
     text-decoration: underline;
 }
 
@@ -49,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--light-gray);
+    color: var(--light-orange);
 }
 
 /* Main Content */
@@ -58,16 +60,16 @@ main {
 }
 
 section {
-    background-color: var(--light-gray);
+    background-color: var(--light-yellow);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    color: var(--deep-blue);
-    box-shadow: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Titres avec touche de jaune */
 section h2 {
-    color: var(--deep-blue);
+    color: var(--light-orange);
     margin-top: 0;
 }
 
