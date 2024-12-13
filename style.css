@@ -2,16 +2,15 @@
 :root {
     --gray-purple: #C6C4DA;
     --deep-blue: #022DAD;
-    --light-gray: #BFCBD6;
+    --yellow: #FFE266;
     --white: #FFFFFF;
-    --light-yellow: #FFE266;
     --light-orange: #FBB473;
 }
 
 /* Style général du corps */
 body {
     background-color: var(--gray-purple);
-    color: var(--white);
+    color: var(--deep-blue);
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -19,7 +18,7 @@ body {
 
 /* Liens */
 a {
-    color: var(--light-gray);
+    color: var(--deep-blue);
     text-decoration: none;
 }
 
@@ -31,7 +30,7 @@ a:hover {
 /* Header */
 header {
     background-color: var(--deep-blue);
-    color: var(--gray-purple);
+    color: var(--yellow);
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -45,7 +44,7 @@ header h1 {
 
 /* Navigation */
 nav a {
-    color: var(--gray-purple);
+    color: var(--yellow);
     margin-left: 15px;
     font-weight: bold;
 }
@@ -60,54 +59,24 @@ main {
 }
 
 section {
-    background-color: var(--light-gray);
+    background-color: var(--yellow);
     padding: 25px;
     margin: 30px 0;
     border-radius: 8px;
     color: var(--deep-blue);
-    box-shadow: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Titres avec touche de jaune/orange */
+/* Titres */
 section h2 {
-    color: var(--light-orange);
-    margin-top: 0;
-}
-
-/* CTA Button */
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: var(--deep-blue);
-    color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: var(--light-orange);
     color: var(--deep-blue);
-}
-
-/* List styling */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-    font-size: 16px;
-    line-height: 1.5;
+    margin-top: 0;
 }
 
 /* Footer */
 footer {
     background-color: var(--deep-blue);
-    color: var(--gray-purple);
+    color: var(--yellow);
     text-align: center;
     padding: 10px 0;
     position: relative;
