@@ -83,3 +83,48 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Fiche d'application */
+.app-card {
+    background-color: var(--yellow);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--deep-blue);
+}
+
+.app-card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: var(--deep-blue);
+}
+
+.app-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.app-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.app-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: var(--deep-blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.app-link:hover {
+    background-color: var(--light-orange);
+    color: var(--deep-blue);
+}
+
