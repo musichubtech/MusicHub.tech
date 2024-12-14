@@ -5,6 +5,7 @@
     --yellow: #FFE266;
     --white: #FFFFFF;
     --light-orange: #FBB473;
+    --light-gray: #E0DEE8; /* Ajout de cette couleur */
 }
 
 /* Style général du corps */
@@ -37,19 +38,21 @@ header {
     justify-content: space-between;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
+header img {
+    height: 60px;
+    width: auto;
+    margin: 10px 0;
+    display: block;
 }
 
-/* Navigation */
-nav a {
-    color: var(--yellow);
+header nav a {
+    color: var(--white);
+    text-decoration: none;
     margin-left: 15px;
     font-weight: bold;
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--light-orange);
 }
 
@@ -83,7 +86,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 
 /* Fiche d'application */
 .app-card {
@@ -126,31 +128,6 @@ footer {
 .app-link:hover {
     background-color: var(--light-orange);
     color: var(--deep-blue);
-}
-
-
-/* En-tête */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--deep-blue);
-    padding: 10px 20px;
-    color: var(--white);
-    
-/* Ajustement du logo dans le header */
-header img {
-    height: 60px;            /* Augmente légèrement la hauteur du logo */
-    width: auto;             /* Garde les proportions du logo */
-    margin: 10px 0;          /* Ajoute un espace au-dessus et en dessous */
-    display: block;          /* Centre le logo correctement */
-}
-
-
-header nav a {
-    color: var(--white);
-    text-decoration: none;
-    margin-left: 15px;
 }
 
 /* Section Héros */
