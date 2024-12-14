@@ -137,11 +137,15 @@ header {
     background-color: var(--deep-blue);
     padding: 10px 20px;
     color: var(--white);
+    
+/* Ajustement du logo dans le header */
+header img {
+    height: 60px;            /* Augmente légèrement la hauteur du logo */
+    width: auto;             /* Garde les proportions du logo */
+    margin: 10px 0;          /* Ajoute un espace au-dessus et en dessous */
+    display: block;          /* Centre le logo correctement */
 }
 
-header img {
-    height: 50px;
-}
 
 header nav a {
     color: var(--white);
