@@ -128,3 +128,90 @@ footer {
     color: var(--deep-blue);
 }
 
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--deep-blue);
+    padding: 10px 20px;
+    color: var(--white);
+}
+
+header img {
+    height: 50px;
+}
+
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Section Héros */
+.hero {
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: var(--deep-blue);
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: var(--deep-blue);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--deep-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: var(--light-orange);
+    color: var(--deep-blue);
+}
+
+/* Section de présentation */
+.intro {
+    background-color: var(--light-gray);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Points forts */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: var(--white);
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--deep-blue);
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--deep-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+}
