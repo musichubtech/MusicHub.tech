@@ -5,7 +5,7 @@
     --light-gray: #F5F5F7;
     --dark-gray: #1D1D1F;
     --accent-color: #0071E3;
-    --hover-color: #022DAD; /* Couleur de survol pour les liens */
+    --hover-color: #022DAD;
 }
 
 /* Style général du corps */
@@ -88,11 +88,6 @@ section h2 {
     margin-bottom: 20px;
 }
 
-section p {
-    font-size: 18px;
-    color: var(--dark-gray);
-}
-
 /* Styles pour le bloc What We Offer */
 .offer ul {
     list-style: none;
@@ -138,25 +133,6 @@ section p {
 
 .cta-button:hover {
     background-color: var(--hover-color);
-}
-
-/* Styles pour Why Choose MusicHub.tech */
-section ul li {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-section ul li::before {
-    content: '✅';
-    margin-right: 10px;
-}
-
-/* Styles pour Join the Revolution */
-.join-revolution p {
-    font-size: 18px;
-    margin-bottom: 20px;
 }
 
 /* Footer */
