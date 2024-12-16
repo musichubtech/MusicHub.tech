@@ -97,20 +97,43 @@ section p {
 ul {
     list-style: none;
     padding: 0;
-    text-align: left;
+    text-align: center;
     max-width: 700px;
     margin: 0 auto;
 }
 
 ul li {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
-ul li strong {
-    margin-left: 10px;
+/* Styles pour le bloc What We Offer */
+.offer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offer li {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.offer .emoji {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.offer .offer-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.offer li p {
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 /* Bouton d'appel à l'action */
@@ -129,92 +152,23 @@ ul li strong {
     background-color: var(--hover-color);
 }
 
-/* Styles pour le bloc What We Offer */
-.offer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.offer li {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.offer li strong {
-    display: block;         /* Place le titre sur une ligne séparée */
-    font-size: 24px;
-    margin-bottom: 10px;    /* Espace entre le titre et la description */
-    color: var(--black);
-}
-
-.offer li p {
+/* Styles pour Why Choose MusicHub.tech */
+section ul li {
+    display: flex;
+    align-items: center;
     font-size: 18px;
-    color: var(--dark-gray);
-    margin: 0;
-}
-
-/* Fiche d'application */
-.app-card {
-    background-color: var(--light-gray);
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.app-card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.app-card img {
-    max-width: 80px;
-    height: auto;
     margin-bottom: 15px;
 }
 
-.app-link {
-    display: inline-block;
-    background-color: var(--black);
-    color: var(--white);
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
+section ul li::before {
+    content: '✅';
+    margin-right: 10px;
 }
 
-.app-link:hover {
-    background-color: var(--hover-color);
-}
-
-/* Points forts */
-.features {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-.feature {
-    background-color: var(--light-gray);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    flex: 1;
-}
-
-.feature h3 {
-    font-size: 22px;
-    color: var(--black);
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 16px;
-    color: var(--dark-gray);
+/* Styles pour Join the Revolution */
+.join-revolution p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 /* Footer */
