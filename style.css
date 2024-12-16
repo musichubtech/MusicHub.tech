@@ -129,6 +129,31 @@ ul li strong {
     background-color: var(--hover-color);
 }
 
+/* Styles pour le bloc What We Offer */
+.offer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offer li {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.offer li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.offer li p {
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+
 /* Fiche d'application */
 .app-card {
     background-color: var(--light-gray);
