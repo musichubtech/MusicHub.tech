@@ -5,7 +5,7 @@
     --light-gray: #F5F5F7;
     --dark-gray: #1D1D1F;
     --accent-color: #0071E3;
-    --hover-color: #022dad; /* Couleur de survol pour les liens */
+    --hover-color: #022DAD; /* Couleur de survol pour les liens */
 }
 
 /* Style général du corps */
@@ -63,38 +63,12 @@ header nav a:hover {
     color: var(--hover-color);
 }
 
-/* Section Hero */
-.hero {
-    background-color: var(--light-gray);
+/* Titre principal */
+main h1 {
     text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 48px;
+    font-size: 36px;
+    margin: 40px 0;
     color: var(--black);
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    color: var(--dark-gray);
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: var(--black);
-    color: var(--white);
-    padding: 12px 24px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cta-button:hover {
-    background-color: var(--hover-color);
 }
 
 /* Section principale */
@@ -117,6 +91,42 @@ section h2 {
 section p {
     font-size: 18px;
     color: var(--dark-gray);
+}
+
+/* Liste avec emojis alignés */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+ul li strong {
+    margin-left: 10px;
+}
+
+/* Bouton d'appel à l'action */
+.cta-button {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: var(--hover-color);
 }
 
 /* Fiche d'application */
