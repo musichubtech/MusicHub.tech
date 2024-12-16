@@ -1,198 +1,184 @@
-/* Palette de couleurs */
+/* Palette de couleurs sobre */
 :root {
-    --gray-purple: #C6C4DA;
-    --deep-blue: #022DAD;
-    --yellow: #FFE266;
     --white: #FFFFFF;
-    --light-orange: #FBB473;
-    --light-gray: #E0DEE8; /* Ajout de cette couleur */
+    --black: #000000;
+    --light-gray: #F5F5F7;
+    --dark-gray: #1D1D1F;
+    --accent-color: #0071E3; /* Bleu d'accent inspiré par Apple */
 }
 
 /* Style général du corps */
 body {
-    background-color: var(--gray-purple);
-    color: var(--deep-blue);
-    font-family: 'Arial', sans-serif;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 /* Liens */
 a {
-    color: var(--deep-blue);
+    color: var(--accent-color);
     text-decoration: none;
+    font-weight: 500;
 }
 
 a:hover {
-    color: var(--light-orange);
     text-decoration: underline;
 }
 
 /* Header */
 header {
-    background-color: var(--deep-blue);
-    color: var(--yellow);
-    padding: 10px 20px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+    padding: 20px 40px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 header img {
-    height: 60px;
+    height: 50px;
     width: auto;
-    margin: 10px 0;
-    display: block;
 }
 
 header nav a {
-    color: var(--white);
-    text-decoration: none;
-    margin-left: 15px;
-    font-weight: bold;
+    color: var(--dark-gray);
+    margin-left: 20px;
+    font-weight: 500;
 }
 
 header nav a:hover {
-    color: var(--light-orange);
+    color: var(--accent-color);
 }
 
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-section {
-    background-color: var(--yellow);
-    padding: 25px;
-    margin: 30px 0;
-    border-radius: 8px;
-    color: var(--deep-blue);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Titres */
-section h2 {
-    color: var(--deep-blue);
-    margin-top: 0;
-}
-
-/* Footer */
-footer {
-    background-color: var(--deep-blue);
-    color: var(--yellow);
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Fiche d'application */
-.app-card {
-    background-color: var(--yellow);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: var(--deep-blue);
-}
-
-.app-card h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: var(--deep-blue);
-}
-
-.app-card img {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.app-card p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.app-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: var(--deep-blue);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.app-link:hover {
-    background-color: var(--light-orange);
-    color: var(--deep-blue);
-}
-
-/* Section Héros */
+/* Section Hero */
 .hero {
-    background-color: var(--yellow);
+    background-color: var(--light-gray);
     text-align: center;
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 
 .hero h1 {
-    font-size: 36px;
-    color: var(--deep-blue);
+    font-size: 48px;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 18px;
-    margin: 20px 0;
-    color: var(--deep-blue);
+    font-size: 20px;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
 }
 
 .cta-button {
     display: inline-block;
-    background-color: var(--deep-blue);
+    background-color: var(--black);
     color: var(--white);
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .cta-button:hover {
-    background-color: var(--light-orange);
-    color: var(--deep-blue);
+    background-color: var(--accent-color);
 }
 
-/* Section de présentation */
-.intro {
-    background-color: var(--light-gray);
-    padding: 40px 20px;
+/* Section principale */
+section {
+    padding: 60px 40px;
+    background-color: var(--white);
     text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    font-size: 32px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    color: var(--dark-gray);
+}
+
+/* Fiche d'application */
+.app-card {
+    background-color: var(--light-gray);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.app-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.app-card img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.app-link {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.app-link:hover {
+    background-color: var(--accent-color);
 }
 
 /* Points forts */
 .features {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 20px;
     padding: 40px 20px;
-    background-color: var(--white);
 }
 
 .feature {
-    width: 30%;
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
+    flex: 1;
 }
 
 .feature h3 {
-    font-size: 24px;
+    font-size: 22px;
+    color: var(--black);
     margin-bottom: 10px;
-    color: var(--deep-blue);
 }
 
-/* Pied de page */
+.feature p {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+/* Footer */
 footer {
-    background-color: var(--deep-blue);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--dark-gray);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    border-top: 1px solid var(--light-gray);
+    font-size: 14px;
 }
