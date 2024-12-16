@@ -4,7 +4,8 @@
     --black: #000000;
     --light-gray: #F5F5F7;
     --dark-gray: #1D1D1F;
-    --accent-color: #022DAD; /* Bleu profond pour la navigation */
+    --accent-color: #0071E3;
+    --hover-color: #022dad; /* Couleur de survol pour les liens */
 }
 
 /* Style général du corps */
@@ -25,6 +26,7 @@ a {
 }
 
 a:hover {
+    color: var(--hover-color);
     text-decoration: underline;
 }
 
@@ -39,6 +41,13 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* Centrage du menu de navigation */
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 header img {
     height: 50px;
     width: auto;
@@ -46,12 +55,12 @@ header img {
 
 header nav a {
     color: var(--dark-gray);
-    margin-left: 20px;
+    margin: 0 20px;
     font-weight: 500;
 }
 
 header nav a:hover {
-    color: var(--accent-color);
+    color: var(--hover-color);
 }
 
 /* Section Hero */
@@ -85,7 +94,7 @@ header nav a:hover {
 }
 
 .cta-button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--hover-color);
 }
 
 /* Section principale */
@@ -123,7 +132,6 @@ section p {
 .app-card h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: var(--black);
 }
 
 .app-card img {
@@ -144,7 +152,7 @@ section p {
 }
 
 .app-link:hover {
-    background-color: var(--accent-color);
+    background-color: var(--hover-color);
 }
 
 /* Points forts */
