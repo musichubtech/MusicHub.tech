@@ -93,19 +93,6 @@ section p {
     color: var(--dark-gray);
 }
 
-/* Liste avec emojis alignés */
-ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-ul li {
-    margin-bottom: 30px;
-}
-
 /* Styles pour le bloc What We Offer */
 .offer ul {
     list-style: none;
@@ -115,11 +102,12 @@ ul li {
 
 .offer li {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .offer .emoji {
     font-size: 40px;
+    display: block;
     margin-bottom: 10px;
 }
 
