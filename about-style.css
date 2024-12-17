@@ -23,6 +23,26 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Header Navigation */
+header nav {
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--hover-color);
+}
+
 /* Main Content - Specific to About Page */
 .about-page main {
     max-width: 1200px;
@@ -65,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
     padding: 40px 0;
 }
 
@@ -74,7 +94,7 @@ body {
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0 4px 12px var(--shadow-color);
-    width: 100%;
+    width: calc(33.333% - 20px);
     max-width: 300px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -122,4 +142,3 @@ body {
 .about-page .cta-button:hover {
     background-color: var(--hover-color);
 }
-
