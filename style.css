@@ -203,3 +203,107 @@ footer nav a {
 footer nav a:hover {
     color: var(--hover-color);
 }
+
+/* Appliquer uniquement aux éléments de la page About */
+.about-page main {
+    padding: 20px;
+}
+
+/* Section Our Mission */
+.about-page .mission {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-page .mission h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.about-page .mission p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Section What We Offer */
+.about-page .offer {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.about-page .offer h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--black);
+}
+
+.about-page .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-page .offer-item {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-page .offer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .offer-item .emoji {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.about-page .offer-item h3 {
+    font-size: 22px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.about-page .offer-item p {
+    font-size: 16px;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Section CTA */
+.about-page .cta {
+    padding: 80px 20px;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.about-page .cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.about-page .cta-button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.about-page .cta-button:hover {
+    background-color: var(--hover-color);
+}
+
