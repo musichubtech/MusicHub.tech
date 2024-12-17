@@ -54,11 +54,13 @@ header a.logo-link {
 header img {
     height: 50px;
     width: auto;
+    margin-right: auto;
 }
 
 header nav {
     display: flex;
     gap: 20px;
+    margin-left: auto;
 }
 
 header nav a {
@@ -109,6 +111,75 @@ header nav a:hover {
     background-color: var(--hover-color);
 }
 
+/* Section de présentation */
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+/* Points forts */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--white);
+}
+
+.feature {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+/* CTA Secondaire */
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--light-gray);
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
     background-color: var(--white);
@@ -132,4 +203,3 @@ footer nav a {
 footer nav a:hover {
     color: var(--hover-color);
 }
-
