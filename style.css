@@ -39,7 +39,7 @@ header {
     border-bottom: 1px solid var(--light-gray);
     padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     position: sticky;
@@ -47,15 +47,15 @@ header {
     z-index: 1000;
 }
 
-header nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-
 header img {
     height: 50px;
     width: auto;
+    margin-right: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
 }
 
 header nav a {
