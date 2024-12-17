@@ -186,82 +186,83 @@ footer nav a:hover {
 /* Page About (about.html) */
 /* ======================== */
 
-.about-page {
-    background-color: var(--secondary-bg);
+/* Styles spécifiques à la page About */
+body.about-page {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
     color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+body.about-page header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+body.about-page header nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.about-page header nav a:hover {
+    color: #0071e3;
 }
 
 /* Hero Section */
-.about-page .hero {
-    padding: 100px 20px;
-    text-align: center;
+body.about-page .hero {
     background-color: #e0f0ff;
+    padding: 80px 20px;
+    text-align: center;
 }
 
-.about-page .hero h1 {
+body.about-page .hero h1 {
     font-size: 48px;
-    margin-bottom: 20px;
-    color: var(--accent-color);
-    font-weight: bold;
+    color: #0071e3;
 }
 
-.about-page .hero p {
-    font-size: 20px;
-    max-width: 700px;
-    margin: 0 auto;
-    color: #555;
-}
-
-/* Contenu principal */
-.about-page .content {
-    padding: 60px 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-page .content h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.about-page .content ul {
-    list-style: none;
-    padding: 0;
+body.about-page .hero p {
     font-size: 18px;
-    line-height: 1.8;
 }
 
-.about-page .content li {
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.about-page .content li::before {
-    content: '✓';
-    color: var(--accent-color);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-/* Section CTA */
-.about-page .cta {
+/* Content Sections */
+body.about-page .content {
+    padding: 40px 20px;
     text-align: center;
-    padding: 60px 20px;
-    background-color: var(--accent-color);
-    color: var(--white);
 }
 
-.about-page .cta-button {
+body.about-page .content h2 {
+    font-size: 32px;
+    color: #000;
+}
+
+/* CTA Section */
+body.about-page .cta {
+    background-color: #0071e3;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+body.about-page .cta-button {
     background-color: #005bb5;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-.about-page .cta-button:hover {
+body.about-page .cta-button:hover {
     background-color: #004a94;
 }
+
+/* Footer */
+body.about-page footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
