@@ -1,4 +1,6 @@
+/* ======================== */
 /* Palette de couleurs sobre */
+/* ======================== */
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -7,6 +9,10 @@
     --accent-color: #0071E3;
     --hover-color: #022DAD;
 }
+
+/* ======================== */
+/* Styles communs */
+/* ======================== */
 
 /* Style général du corps */
 body {
@@ -72,113 +78,6 @@ header nav a:hover {
     color: var(--hover-color);
 }
 
-/* Section Héros */
-.hero {
-    background-color: var(--light-gray);
-    padding: 80px 20px;
-    text-align: center;
-    border-bottom: 1px solid var(--light-gray);
-}
-
-.hero h1 {
-    font-size: 48px;
-    color: var(--black);
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.hero p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 30px;
-    color: var(--dark-gray);
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--white);
-    padding: 14px 28px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: var(--hover-color);
-    transform: scale(1.05);
-}
-
-/* Section de présentation */
-.intro {
-    padding: 60px 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.intro h2 {
-    font-size: 36px;
-    color: var(--black);
-    margin-bottom: 20px;
-}
-
-.intro p {
-    font-size: 18px;
-    color: var(--dark-gray);
-    line-height: 1.8;
-}
-
-/* Points forts */
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-    background-color: var(--white);
-}
-
-.feature {
-    flex: 1 1 300px;
-    max-width: 300px;
-    text-align: center;
-    padding: 20px;
-    background-color: var(--light-gray);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-}
-
-.feature h3 {
-    font-size: 24px;
-    color: var(--black);
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 16px;
-    color: var(--dark-gray);
-}
-
-/* CTA Secondaire */
-.cta-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: var(--light-gray);
-}
-
-.cta-section h2 {
-    font-size: 32px;
-    color: var(--black);
-    margin-bottom: 20px;
-}
-
 /* Footer */
 footer {
     background-color: var(--white);
@@ -201,4 +100,170 @@ footer nav a {
 
 footer nav a:hover {
     color: var(--hover-color);
+}
+
+/* Bouton CTA */
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* ======================== */
+/* Page d'accueil (index.html) */
+/* ======================== */
+
+/* Section Héros */
+.home .hero {
+    background-color: var(--light-gray);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.home .hero h1 {
+    font-size: 48px;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.home .hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--dark-gray);
+}
+
+/* Section de présentation */
+.home .intro {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home .intro h2 {
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.home .intro p {
+    font-size: 18px;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+/* Points forts */
+.home .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--white);
+}
+
+.home .feature {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.home .feature:hover {
+    transform: translateY(-10px);
+}
+
+/* ======================== */
+/* Page À propos (about.html) */
+/* ======================== */
+
+/* Hero Section */
+.about .hero {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.about .hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.about .hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mission Section */
+.about .mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 40px;
+    background-color: var(--white);
+}
+
+.about .mission .text {
+    max-width: 500px;
+}
+
+.about .mission h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.about .mission .image img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Full-Width Image Section */
+.about .full-width-image img {
+    width: 100%;
+    display: block;
+}
+
+/* Offer Section */
+.about .offer {
+    padding: 100px 20px;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.about .offer h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.about .offer-item {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
