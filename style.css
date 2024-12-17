@@ -186,7 +186,7 @@ footer nav a:hover {
 /* Page About (about.html) */
 /* ======================== */
 
-/* Styles spécifiques à la page About */
+/* Styles spécifiques pour la page About */
 body.about-page {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -200,12 +200,16 @@ body.about-page header {
     background-color: #fff;
     padding: 20px;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 body.about-page header nav a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
+    margin-left: 20px;
 }
 
 body.about-page header nav a:hover {
@@ -225,7 +229,7 @@ body.about-page .hero h1 {
 }
 
 body.about-page .hero p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* Content Sections */
@@ -253,6 +257,7 @@ body.about-page .cta-button {
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 body.about-page .cta-button:hover {
@@ -264,5 +269,7 @@ body.about-page footer {
     background-color: #f1f1f1;
     padding: 20px;
     text-align: center;
+    border-top: 1px solid #ddd;
 }
+
 
