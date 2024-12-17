@@ -6,14 +6,6 @@
     --dark-gray: #1D1D1F;
     --accent-color: #0071E3;
     --hover-color: #022DAD;
-    --cta-bg-color: #F0F4FF;
-    --cta-border-color: #D0DAFF;
-    --mission-bg-color: #F9FAFC;
-    --mission-border-color: #DDE2E8;
-    --offer-bg-color: #FDFDFE;
-    --offer-border-color: #E2E6EA;
-    --secondary-color: #E5E5E5;
-    --bg-alt: #F5F5F7;
 }
 
 /* Style général du corps */
@@ -55,6 +47,16 @@ header {
     z-index: 1000;
 }
 
+header a.logo-link {
+    display: inline-block;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    margin-right: auto;
+}
+
 header nav {
     display: flex;
     gap: 20px;
@@ -64,6 +66,7 @@ header nav {
 header nav a {
     color: var(--dark-gray);
     font-weight: 500;
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
@@ -71,53 +74,26 @@ header nav a:hover {
     color: var(--hover-color);
 }
 
-header img {
-    height: 50px;
-    width: auto;
-}
-
-/* Page d'accueil */
+/* Section Héros */
 .hero {
-    position: relative;
     background-color: var(--light-gray);
     padding: 80px 20px;
     text-align: center;
     border-bottom: 1px solid var(--light-gray);
-    overflow: hidden;
-    height: 100vh; /* Pleine hauteur de l'écran */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    color: var(--white);
-    max-width: 600px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero h1 {
     font-size: 48px;
+    color: var(--black);
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--dark-gray);
 }
 
 .cta-button {
@@ -135,16 +111,34 @@ header img {
     background-color: var(--hover-color);
 }
 
-.intro, .features, .cta-section {
+/* Section de présentation */
+.intro {
     padding: 60px 20px;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+.intro h2 {
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+/* Points forts */
 .features {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--white);
 }
 
 .feature {
@@ -162,6 +156,30 @@ header img {
     transform: translateY(-10px);
 }
 
+.feature h3 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+/* CTA Secondaire */
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--light-gray);
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
     background-color: var(--white);
@@ -172,88 +190,16 @@ footer {
     font-size: 14px;
 }
 
+footer nav {
+    margin-top: 10px;
+}
+
 footer nav a {
     margin: 0 10px;
+    font-size: 14px;
     color: var(--dark-gray);
 }
 
 footer nav a:hover {
     color: var(--hover-color);
-}
-
-/* About Page Styles */
-body.about-page {
-    background-color: var(--white);
-    color: var(--dark-gray);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.8;
-    margin: 0;
-}
-
-body.about-page .mission {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 40px;
-}
-
-body.about-page .mission .text {
-    max-width: 500px;
-}
-
-body.about-page .mission .image img {
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-body.about-page .offer {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: var(--white);
-}
-
-body.about-page .offer h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-body.about-page .offer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-}
-
-body.about-page .offer-item {
-    background-color: var(--light-gray);
-    padding: 30px;
-    border-radius: 10px;
-}
-
-body.about-page .cta {
-    background-color: var(--black);
-    color: var(--white);
-    text-align: center;
-    padding: 100px 20px;
-}
-
-body.about-page .cta-button {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--white);
-    padding: 14px 28px;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-body.about-page .cta-button:hover {
-    transform: scale(1.05);
-    background-color: var(--hover-color);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--light-gray);
-    font-size: 14px;
 }
