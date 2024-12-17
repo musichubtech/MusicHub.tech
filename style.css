@@ -1,5 +1,3 @@
-/* about-style.css - Minimalist and sleek styles inspired by Apple's design */
-
 /* Palette de couleurs sobre */
 :root {
     --white: #FFFFFF;
@@ -8,10 +6,9 @@
     --dark-gray: #1D1D1F;
     --accent-color: #0071E3;
     --hover-color: #022DAD;
-    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Style du corps */
+/* Style général du corps */
 body {
     background-color: var(--white);
     color: var(--dark-gray);
@@ -23,103 +20,186 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Main Content */
-main {
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 20px;
-    text-align: center;
+/* Liens */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-h1 {
-    font-size: 3.5em;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: var(--black);
+a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
 }
 
-h2 {
-    font-size: 2.5em;
-    font-weight: 600;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    color: var(--black);
+/* Header */
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-p {
-    font-size: 1.2em;
-    color: var(--dark-gray);
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
+header a.logo-link {
+    display: inline-block;
+}
+
+header img {
+    height: 50px;
+    width: auto;
     margin-right: auto;
 }
 
-strong {
-    color: var(--accent-color);
-    font-weight: 600;
-}
-
-/* Our Key Focus Areas */
-.offer {
+header nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 40px 0;
+    gap: 20px;
+    margin-left: auto;
 }
 
-.offer-item {
-    background: var(--light-gray);
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px var(--shadow-color);
-    width: 100%;
-    max-width: 300px;
+header nav a {
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--hover-color);
+}
+
+/* Section Héros */
+.hero {
+    background-color: var(--light-gray);
+    padding: 80px 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    border-bottom: 1px solid var(--light-gray);
 }
 
-.offer-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px var(--shadow-color);
+.hero h1 {
+    font-size: 48px;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.offer-item .emoji {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-}
-
-.offer-item h3 {
-    font-size: 1.4em;
-    font-weight: 700;
-    margin-bottom: 10px;
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
     color: var(--dark-gray);
 }
 
-.offer-item p {
-    font-size: 1em;
-    color: var(--dark-gray);
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* CTA Button */
 .cta-button {
     display: inline-block;
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     color: var(--white);
     padding: 14px 28px;
-    text-decoration: none;
     border-radius: 8px;
-    font-weight: 600;
-    font-size: 1.2em;
+    font-size: 16px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
-    margin-top: 40px;
 }
 
 .cta-button:hover {
     background-color: var(--hover-color);
 }
 
+/* Section de présentation */
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+/* Points forts */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--white);
+}
+
+.feature {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+/* CTA Secondaire */
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--light-gray);
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--light-gray);
+    font-size: 14px;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+footer nav a:hover {
+    color: var(--hover-color);
+}
