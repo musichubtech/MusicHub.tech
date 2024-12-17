@@ -121,6 +121,7 @@ header nav a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
     max-width: 400px;
+    cursor: default;
 }
 
 .about-page .offer-item:hover {
@@ -147,11 +148,6 @@ header nav a:hover {
     margin: 0;
 }
 
-/* Suppression du curseur pointer */
-.about-page .offer-item {
-    cursor: default;
-}
-
 /* CTA Button - Specific to About Page */
 .about-page .cta-button {
     display: inline-block;
@@ -173,9 +169,10 @@ header nav a:hover {
 /* Get Started Section with Gray Background */
 .about-page .get-started {
     background: var(--light-gray);
-    padding: 40px 20px;
+    padding: 60px 20px;
     border-radius: 16px;
-    margin-top: 60px;
+    margin: 60px auto;
+    max-width: 800px;
     text-align: center;
 }
 
