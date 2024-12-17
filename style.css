@@ -49,7 +49,7 @@ header {
 
 header nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
 }
 
