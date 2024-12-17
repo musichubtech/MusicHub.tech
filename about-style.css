@@ -100,45 +100,59 @@ strong {
     font-weight: 600;
 }
 
-/* Offer Section */
-.offer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+/* Our Key Focus Areas */
+.offer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    align-items: center;
+    padding: 40px 0;
 }
 
-.offer li {
-    display: flex;
-    align-items: center;
+.offer-item {
     background: var(--light-gray);
-    padding: 30px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 900px;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.offer .emoji {
-    font-size: 3em;
-    margin-right: 30px;
-    min-width: 60px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.offer strong {
+.offer-item:hover {
+    transform: translateY(-10px);
+}
+
+.offer-item .emoji {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.offer-item h3 {
     font-size: 1.5em;
     color: var(--dark-gray);
+    margin-bottom: 10px;
     font-weight: 600;
 }
 
-.offer p {
-    margin: 10px 0 0;
-    font-size: 1.1em;
+.offer-item p {
+    font-size: 1em;
     color: var(--dark-gray);
+}
+
+/* Why MusicHub.tech? */
+.why-section {
+    padding: 60px 20px;
+    background-color: var(--light-gray);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.why-section p {
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
 }
 
 /* CTA Button */
