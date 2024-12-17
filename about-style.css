@@ -57,11 +57,13 @@ header nav a {
     color: var(--dark-gray);
     font-weight: 500;
     font-size: 16px;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 header nav a:hover {
     color: var(--hover-color);
+    text-decoration: underline;
 }
 
 /* Main Content - Specific to About Page */
@@ -104,8 +106,8 @@ header nav a:hover {
 /* Our Key Focus Areas - Specific to About Page */
 .about-page .offer {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 40px 0;
 }
@@ -116,6 +118,7 @@ header nav a:hover {
     border-radius: 16px;
     box-shadow: 0 4px 12px var(--shadow-color);
     width: calc(25% - 20px);
+    min-width: 250px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
