@@ -14,7 +14,7 @@
     --offer-border-color: #E2E6EA;
 }
 
-/* Style général du corps */
+/* Style général du corps pour About uniquement */
 body.about-page {
     background-color: var(--white);
     color: var(--dark-gray);
@@ -23,24 +23,23 @@ body.about-page {
     padding: 0;
     line-height: 1.6;
     font-size: 16px;
-    -webkit-font-smoothing: antialiased;
 }
 
-/* Liens */
-.about-page a {
+/* Liens - About */
+body.about-page a {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.about-page a:hover {
+body.about-page a:hover {
     color: var(--hover-color);
     text-decoration: underline;
 }
 
-/* Header */
-.about-page header {
+/* Header - About */
+body.about-page header {
     background-color: var(--white);
     border-bottom: 1px solid var(--light-gray);
     padding: 20px 40px;
@@ -53,144 +52,128 @@ body.about-page {
     z-index: 1000;
 }
 
-.about-page header img {
-    height: 50px;
-    width: auto;
-}
-
-.about-page header nav {
-    display: flex;
-    gap: 20px;
-}
-
-.about-page header nav a {
+body.about-page header nav a {
     color: var(--dark-gray);
     font-weight: 500;
-    font-size: 16px;
     transition: color 0.3s ease;
 }
 
-.about-page header nav a:hover {
+body.about-page header nav a:hover {
     color: var(--hover-color);
 }
 
-/* Section Our Mission */
-.about-page .mission {
+/* Mission Section */
+body.about-page .mission {
     padding: 80px 20px;
     text-align: center;
     background-color: var(--mission-bg-color);
-    border: 2px solid var(--mission-border-color);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-top: 2px solid var(--mission-border-color);
+    border-bottom: 2px solid var(--mission-border-color);
 }
 
-.about-page .mission h2 {
-    font-size: 38px;
-    margin-bottom: 25px;
+body.about-page .mission h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
     color: var(--black);
     font-weight: bold;
 }
 
-.about-page .mission p {
+body.about-page .mission p {
     font-size: 18px;
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     line-height: 1.8;
 }
 
-/* Section What We Offer */
-.about-page .offer {
+/* What We Offer */
+body.about-page .offer {
     padding: 60px 20px;
     text-align: center;
     background-color: var(--offer-bg-color);
     border-top: 2px solid var(--offer-border-color);
-    border-bottom: 2px solid var(--offer-border-color);
-    border-radius: 8px;
 }
 
-.about-page .offer h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+body.about-page .offer h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
     color: var(--black);
 }
 
-.about-page .offer-grid {
+body.about-page .offer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    max-width: 1000px;
+    gap: 30px;
     margin: 0 auto;
+    max-width: 1000px;
 }
 
-.about-page .offer-item {
+body.about-page .offer-item {
     background-color: var(--white);
-    padding: 30px;
     border: 1px solid var(--offer-border-color);
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-page .offer-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+body.about-page .offer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.about-page .offer-item .emoji {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.about-page .offer-item h3 {
-    font-size: 22px;
-    color: var(--black);
+body.about-page .offer-item .emoji {
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
-.about-page .offer-item p {
+body.about-page .offer-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+body.about-page .offer-item p {
     font-size: 16px;
     color: var(--dark-gray);
-    line-height: 1.6;
 }
 
-/* Section CTA */
-.about-page .cta {
-    padding: 80px 20px;
+/* CTA Section */
+body.about-page .cta {
+    padding: 60px 20px;
+    text-align: center;
     background-color: var(--cta-bg-color);
     border: 2px solid var(--cta-border-color);
-    text-align: center;
-    border-radius: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.about-page .cta h2 {
+body.about-page .cta h2 {
     font-size: 32px;
     margin-bottom: 20px;
     color: var(--black);
     font-weight: bold;
 }
 
-.about-page .cta-button {
+body.about-page .cta-button {
     background-color: var(--accent-color);
     color: var(--white);
-    padding: 14px 28px;
+    padding: 14px 24px;
     border-radius: 50px;
-    font-size: 18px;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.about-page .cta-button:hover {
+body.about-page .cta-button:hover {
     background-color: var(--hover-color);
     transform: scale(1.05);
 }
 
-/* Footer */
-.about-page footer {
-    background-color: var(--white);
-    color: var(--dark-gray);
-    text-align: center;
+/* Footer - About */
+body.about-page footer {
     padding: 20px;
+    text-align: center;
+    background-color: var(--white);
     border-top: 1px solid var(--light-gray);
     font-size: 14px;
+    color: var(--dark-gray);
 }
