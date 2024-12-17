@@ -12,12 +12,6 @@
     --mission-border-color: #DDE2E8;
     --offer-bg-color: #FDFDFE;
     --offer-border-color: #E2E6EA;
-    --secondary-color: #E5E5E5
-    --white: #FFFFFF;
-    --black: #000000;
-    --light-gray: #F9FAFB;
-    --dark-gray: #333333;
-    --accent-color: #0071E3;
     --secondary-color: #E5E5E5;
     --bg-alt: #F5F5F7;
 }
@@ -165,200 +159,79 @@ footer nav a:hover {
     color: var(--hover-color);
 }
 
-
-
-/* Style général about-page */
+/* About Page Styles */
 body.about-page {
+    background-color: var(--white);
+    color: var(--dark-gray);
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: var(--dark-gray);
-    margin: 0;
-    padding: 0;
     line-height: 1.8;
-    font-size: 16px;
-    background-color: var(--white);
+    margin: 0;
 }
 
-/* Header */
-.about-page header {
-    background-color: var(--white);
-    border-bottom: 1px solid var(--secondary-color);
-    padding: 20px 40px;
+body.about-page .mission {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.about-page header img {
-    height: 40px;
-}
-
-.about-page header nav a {
-    color: var(--black);
-    margin-left: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.about-page header nav a:hover {
-    color: var(--accent-color);
-}
-
-/* Hero Section */
-.about-page .hero {
-    background-color: var(--bg-alt);
-    padding: 120px 20px;
-    text-align: left;
-}
-
-.about-page .hero h1 {
-    font-size: 64px;
-    font-weight: bold;
-    color: var(--black);
-    margin-bottom: 20px;
-}
-
-.about-page .hero p {
-    font-size: 20px;
-    color: var(--dark-gray);
-    max-width: 600px;
-    margin-bottom: 30px;
-}
-
-.about-page .hero .cta-button {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--white);
-    padding: 14px 28px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.about-page .hero .cta-button:hover {
-    background-color: var(--black);
-    transform: scale(1.05);
-}
-
-/* Mission Section */
-.about-page .mission {
-    padding: 100px 20px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: var(--white);
+    padding: 100px 40px;
 }
 
-.about-page .mission img {
+body.about-page .mission .text {
     max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.about-page .mission .content {
-    max-width: 600px;
+body.about-page .mission .image img {
+    max-width: 500px;
+    border-radius: 10px;
 }
 
-.about-page .mission h2 {
-    font-size: 40px;
-    color: var(--black);
-    margin-bottom: 20px;
-}
-
-/* What We Offer */
-.about-page .offer {
-    padding: 100px 20px;
-    background-color: var(--bg-alt);
+body.about-page .offer {
     text-align: center;
-}
-
-.about-page .offer h2 {
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: var(--black);
-}
-
-.about-page .offer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.about-page .offer-item {
-    background-color: var(--white);
-    padding: 40px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-page .offer-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.about-page .offer-item h3 {
-    font-size: 22px;
-    color: var(--black);
-    margin-bottom: 15px;
-}
-
-.about-page .offer-item p {
-    font-size: 16px;
-}
-
-/* CTA Section */
-.about-page .cta {
     padding: 100px 20px;
+    background-color: var(--white);
+}
+
+body.about-page .offer h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+body.about-page .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+body.about-page .offer-item {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+body.about-page .cta {
     background-color: var(--black);
     color: var(--white);
     text-align: center;
+    padding: 100px 20px;
 }
 
-.about-page .cta h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.about-page .cta a {
+body.about-page .cta-button {
     display: inline-block;
-    margin-top: 20px;
-    color: var(--black);
-    background-color: var(--white);
+    background-color: var(--accent-color);
+    color: var(--white);
     padding: 14px 28px;
     border-radius: 50px;
     font-weight: bold;
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.about-page .cta a:hover {
+body.about-page .cta-button:hover {
     transform: scale(1.05);
-    background-color: var(--accent-color);
-    color: var(--white);
+    background-color: var(--hover-color);
 }
 
-/* Animation au scroll */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light-gray);
+    font-size: 14px;
 }
-
-.about-page .fade-in {
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
-}
-
-.about-page .delay-1 { animation-delay: 0.3s; }
-.about-page .delay-2 { animation-delay: 0.6s; }
-
-
-
