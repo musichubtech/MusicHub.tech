@@ -209,9 +209,9 @@ header nav a:hover {
 }
 
 .about-page .why-section li::before {
-    content: '\2022'; /* Utilisation d'un point classique */
+    content: '\279E'; /* Flèche droite élégante */
     font-size: 1.5em;
-    color: var(--dark-gray);
+    color: var(--accent-color);
 }
 
 /* Footer */
