@@ -54,13 +54,11 @@ header a.logo-link {
 header img {
     height: 50px;
     width: auto;
-    margin-right: auto;
 }
 
 header nav {
     display: flex;
     gap: 20px;
-    margin-left: auto;
 }
 
 header nav a {
@@ -77,17 +75,13 @@ header nav a:hover {
 /* Section Héros */
 .hero {
     background-color: var(--light-gray);
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
-    border: 1px solid var(--light-gray);
-    border-radius: 16px;
-    max-width: 800px;
-    margin: 40px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 48px;
     color: var(--black);
     margin-bottom: 20px;
     font-weight: bold;
@@ -115,32 +109,6 @@ header nav a:hover {
     background-color: var(--hover-color);
 }
 
-/* Section CTA Secondaire */
-.cta-section {
-    background-color: var(--light-gray);
-    padding: 60px 20px;
-    text-align: center;
-    border: 1px solid var(--light-gray);
-    border-radius: 16px;
-    max-width: 800px;
-    margin: 40px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.cta-section h2 {
-    font-size: 36px;
-    color: var(--black);
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.cta-section p {
-    font-size: 18px;
-    color: var(--dark-gray);
-    max-width: 600px;
-    margin: 0 auto 30px;
-}
-
 /* Footer */
 footer {
     background-color: var(--white);
@@ -164,3 +132,4 @@ footer nav a {
 footer nav a:hover {
     color: var(--hover-color);
 }
+
