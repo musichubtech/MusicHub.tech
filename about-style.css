@@ -1,1 +1,125 @@
+/* about-style.css - Minimalist and sleek styles inspired by Apple's design */
+
+/* Palette de couleurs sobre */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --light-gray: #F5F5F7;
+    --dark-gray: #1D1D1F;
+    --accent-color: #0071E3;
+    --hover-color: #022DAD;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Style du corps */
+body {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Main Content - Specific to About Page */
+.about-page main {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about-page h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.about-page h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.about-page p {
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-page strong {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Our Key Focus Areas - Specific to About Page */
+.about-page .offer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.about-page .offer-item {
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.about-page .offer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.about-page .offer-item .emoji {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.about-page .offer-item h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--dark-gray);
+}
+
+.about-page .offer-item p {
+    font-size: 1em;
+    color: var(--dark-gray);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* CTA Button - Specific to About Page */
+.about-page .cta-button {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.about-page .cta-button:hover {
+    background-color: var(--hover-color);
+}
 
