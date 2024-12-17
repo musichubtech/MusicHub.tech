@@ -16,6 +16,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Liens */
@@ -23,6 +25,7 @@ a {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -39,13 +42,15 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Centrage du menu de navigation */
 header nav {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    gap: 20px;
 }
 
 header img {
@@ -55,84 +60,119 @@ header img {
 
 header nav a {
     color: var(--dark-gray);
-    margin: 0 20px;
     font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover {
     color: var(--hover-color);
 }
 
-/* Titre principal */
-main h1 {
+/* Section Héros */
+.hero {
+    background-color: var(--light-gray);
+    padding: 80px 20px;
     text-align: center;
-    font-size: 36px;
-    margin: 40px 0;
-    color: var(--black);
+    border-bottom: 1px solid var(--light-gray);
 }
 
-/* Section principale */
-section {
-    padding: 60px 40px;
-    background-color: var(--white);
-    text-align: center;
-    max-width: 800px;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-section h2 {
-    font-size: 32px;
+.hero h1 {
+    font-size: 48px;
     color: var(--black);
     margin-bottom: 20px;
-}
-
-/* Styles pour le bloc What We Offer */
-.offer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.offer li {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.offer .emoji {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.offer .offer-title {
-    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
-.offer li p {
-    font-size: 16px;
-    color: var(--dark-gray);
-    margin: 0 auto;
+.hero p {
+    font-size: 18px;
     max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--dark-gray);
 }
 
-/* Bouton d'appel à l'action */
 .cta-button {
     display: inline-block;
-    background-color: var(--black);
+    background-color: var(--accent-color);
     color: var(--white);
-    padding: 12px 24px;
-    border-radius: 6px;
-    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: bold;
-    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: var(--hover-color);
+}
+
+/* Section de présentation */
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+/* Points forts */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--white);
+}
+
+.feature {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+/* CTA Secondaire */
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--light-gray);
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    color: var(--black);
+    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -143,4 +183,18 @@ footer {
     padding: 20px;
     border-top: 1px solid var(--light-gray);
     font-size: 14px;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+footer nav a:hover {
+    color: var(--hover-color);
 }
