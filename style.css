@@ -1,3 +1,5 @@
+/* about-style.css - Minimalist and sleek styles inspired by Apple's design */
+
 /* Palette de couleurs sobre */
 :root {
     --white: #FFFFFF;
@@ -8,7 +10,7 @@
     --hover-color: #022DAD;
 }
 
-/* Style général du corps */
+/* Style du corps */
 body {
     background-color: var(--white);
     color: var(--dark-gray);
@@ -18,19 +20,6 @@ body {
     line-height: 1.6;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
-}
-
-/* Liens */
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--hover-color);
-    text-decoration: underline;
 }
 
 /* Header */
@@ -74,110 +63,119 @@ header nav a:hover {
     color: var(--hover-color);
 }
 
-/* Section Héros */
-.hero {
-    background-color: var(--light-gray);
-    padding: 80px 20px;
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
     text-align: center;
-    border-bottom: 1px solid var(--light-gray);
 }
 
-.hero h1 {
-    font-size: 48px;
-    color: var(--black);
+h1 {
+    font-size: 3.5em;
+    font-weight: 700;
     margin-bottom: 20px;
-    font-weight: bold;
+    color: var(--black);
 }
 
-.hero p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 30px;
+h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+p {
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+strong {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Our Key Focus Areas */
+.offer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.offer-item {
+    background: var(--light-gray);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.offer-item .emoji {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.offer-item h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
     color: var(--dark-gray);
 }
 
+.offer-item p {
+    font-size: 1em;
+    color: var(--dark-gray);
+    line-height: 1.5;
+}
+
+/* Why MusicHub.tech? */
+.why-section {
+    padding: 60px 20px;
+    background-color: var(--light-gray);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.why-section p {
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+/* CTA Button */
 .cta-button {
     display: inline-block;
-    background-color: var(--accent-color);
+    background: var(--accent-color);
     color: var(--white);
     padding: 14px 28px;
+    text-decoration: none;
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.2em;
     transition: background-color 0.3s ease;
+    margin-top: 40px;
 }
 
 .cta-button:hover {
     background-color: var(--hover-color);
-}
-
-/* Section de présentation */
-.intro {
-    padding: 60px 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.intro h2 {
-    font-size: 36px;
-    color: var(--black);
-    margin-bottom: 20px;
-}
-
-.intro p {
-    font-size: 18px;
-    color: var(--dark-gray);
-    line-height: 1.8;
-}
-
-/* Points forts */
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-    background-color: var(--white);
-}
-
-.feature {
-    flex: 1 1 300px;
-    max-width: 300px;
-    text-align: center;
-    padding: 20px;
-    background-color: var(--light-gray);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-}
-
-.feature h3 {
-    font-size: 24px;
-    color: var(--black);
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 16px;
-    color: var(--dark-gray);
-}
-
-/* CTA Secondaire */
-.cta-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: var(--light-gray);
-}
-
-.cta-section h2 {
-    font-size: 32px;
-    color: var(--black);
-    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -188,6 +186,7 @@ footer {
     padding: 20px;
     border-top: 1px solid var(--light-gray);
     font-size: 14px;
+    margin-top: 80px;
 }
 
 footer nav {
