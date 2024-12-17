@@ -105,23 +105,23 @@ header nav a:hover {
 
 /* Our Key Focus Areas - Specific to About Page */
 .about-page .offer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Deux colonnes sur les grands écrans, une colonne sur petits écrans */
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding: 40px 0;
-    justify-content: center;
 }
 
 .about-page .offer-item {
     background: var(--light-gray);
-    padding: 30px;
+    padding: 20px;
     border-radius: 16px;
     box-shadow: 0 4px 12px var(--shadow-color);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    min-width: 250px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
 }
 
 .about-page .offer-item:hover {
@@ -164,4 +164,28 @@ header nav a:hover {
 
 .about-page .cta-button:hover {
     background-color: var(--hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--light-gray);
+    font-size: 14px;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+footer nav a:hover {
+    color: var(--hover-color);
 }
