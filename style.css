@@ -47,6 +47,10 @@ header {
     z-index: 1000;
 }
 
+header a.logo-link {
+    display: inline-block;
+}
+
 header img {
     height: 50px;
     width: auto;
