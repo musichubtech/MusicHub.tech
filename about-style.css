@@ -1,68 +1,70 @@
-/* about-style.css - Specific styles for the About page */
+/* about-style.css - Minimalist and sleek styles for the About page */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #1a1a1a;
-    padding: 10px 20px;
+    background-color: #fff;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 header img {
-    height: 50px;
+    height: 40px;
 }
 
 nav a {
-    color: #fff;
+    color: #1d1d1f;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 30px;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #007bff;
+    color: #0071e3;
 }
 
 main {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
 h1 {
     text-align: center;
-    color: #222;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    color: #1d1d1f;
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 h2 {
-    color: #444;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    color: #1d1d1f;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.1em;
-    margin: 10px 0;
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #3a3a3a;
 }
 
 strong {
-    color: #007bff;
+    color: #0071e3;
+    font-weight: 600;
 }
 
 .offer ul {
@@ -72,48 +74,51 @@ strong {
 
 .offer li {
     display: flex;
-    align-items: flex-start;
-    background: #f0f4f8;
+    align-items: center;
+    background: #f5f5f7;
     margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 .offer .emoji {
-    font-size: 2em;
-    margin-right: 15px;
+    font-size: 2.5em;
+    margin-right: 20px;
 }
 
 .offer strong {
-    font-size: 1.2em;
-    color: #222;
+    font-size: 1.3em;
+    color: #1d1d1f;
+    font-weight: 600;
 }
 
 .offer p {
-    margin: 5px 0 0;
-    font-size: 1em;
+    margin: 0;
+    font-size: 1.1em;
+    color: #3a3a3a;
 }
 
 .cta-button {
     display: inline-block;
-    background: #007bff;
+    background: #0071e3;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 30px;
     transition: background 0.3s;
 }
 
 .cta-button:hover {
-    background: #0056b3;
+    background: #005bb5;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background: #1a1a1a;
-    color: #fff;
-    margin-top: 40px;
+    padding: 30px;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    margin-top: 60px;
+    font-size: 1em;
 }
