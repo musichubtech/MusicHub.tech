@@ -15,7 +15,7 @@
 }
 
 /* Style général du corps */
-body {
+body.about-page {
     background-color: var(--white);
     color: var(--dark-gray);
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -27,20 +27,20 @@ body {
 }
 
 /* Liens */
-a {
+.about-page a {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-a:hover {
+.about-page a:hover {
     color: var(--hover-color);
     text-decoration: underline;
 }
 
 /* Header */
-header {
+.about-page header {
     background-color: var(--white);
     border-bottom: 1px solid var(--light-gray);
     padding: 20px 40px;
@@ -53,29 +53,29 @@ header {
     z-index: 1000;
 }
 
-header img {
+.about-page header img {
     height: 50px;
     width: auto;
 }
 
-header nav {
+.about-page header nav {
     display: flex;
     gap: 20px;
 }
 
-header nav a {
+.about-page header nav a {
     color: var(--dark-gray);
     font-weight: 500;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
-header nav a:hover {
+.about-page header nav a:hover {
     color: var(--hover-color);
 }
 
 /* Section Our Mission */
-.mission {
+.about-page .mission {
     padding: 80px 20px;
     text-align: center;
     background-color: var(--mission-bg-color);
@@ -84,14 +84,14 @@ header nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.mission h2 {
+.about-page .mission h2 {
     font-size: 38px;
     margin-bottom: 25px;
     color: var(--black);
     font-weight: bold;
 }
 
-.mission p {
+.about-page .mission p {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto 20px;
@@ -99,7 +99,7 @@ header nav a:hover {
 }
 
 /* Section What We Offer */
-.offer {
+.about-page .offer {
     padding: 60px 20px;
     text-align: center;
     background-color: var(--offer-bg-color);
@@ -108,13 +108,13 @@ header nav a:hover {
     border-radius: 8px;
 }
 
-.offer h2 {
+.about-page .offer h2 {
     font-size: 36px;
     margin-bottom: 40px;
     color: var(--black);
 }
 
-.offer-grid {
+.about-page .offer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
@@ -122,7 +122,7 @@ header nav a:hover {
     margin: 0 auto;
 }
 
-.offer-item {
+.about-page .offer-item {
     background-color: var(--white);
     padding: 30px;
     border: 1px solid var(--offer-border-color);
@@ -132,30 +132,30 @@ header nav a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.offer-item:hover {
+.about-page .offer-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.offer-item .emoji {
+.about-page .offer-item .emoji {
     font-size: 40px;
     margin-bottom: 15px;
 }
 
-.offer-item h3 {
+.about-page .offer-item h3 {
     font-size: 22px;
     color: var(--black);
     margin-bottom: 10px;
 }
 
-.offer-item p {
+.about-page .offer-item p {
     font-size: 16px;
     color: var(--dark-gray);
     line-height: 1.6;
 }
 
 /* Section CTA */
-.cta {
+.about-page .cta {
     padding: 80px 20px;
     background-color: var(--cta-bg-color);
     border: 2px solid var(--cta-border-color);
@@ -163,14 +163,14 @@ header nav a:hover {
     border-radius: 12px;
 }
 
-.cta h2 {
+.about-page .cta h2 {
     font-size: 32px;
     margin-bottom: 20px;
     color: var(--black);
     font-weight: bold;
 }
 
-.cta-button {
+.about-page .cta-button {
     background-color: var(--accent-color);
     color: var(--white);
     padding: 14px 28px;
@@ -180,13 +180,13 @@ header nav a:hover {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.cta-button:hover {
+.about-page .cta-button:hover {
     background-color: var(--hover-color);
     transform: scale(1.05);
 }
 
 /* Footer */
-footer {
+.about-page footer {
     background-color: var(--white);
     color: var(--dark-gray);
     text-align: center;
