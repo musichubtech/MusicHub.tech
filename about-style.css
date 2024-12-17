@@ -106,8 +106,8 @@ header nav a:hover {
 /* Our Key Focus Areas - Specific to About Page */
 .about-page .offer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 30px;
     padding: 40px 0;
     justify-content: center;
 }
@@ -120,6 +120,7 @@ header nav a:hover {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    min-width: 250px;
 }
 
 .about-page .offer-item:hover {
