@@ -39,7 +39,7 @@ header {
     border-bottom: 1px solid var(--light-gray);
     padding: 20px 40px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     position: sticky;
@@ -50,7 +50,6 @@ header {
 header img {
     height: 50px;
     width: auto;
-    margin-right: auto;
 }
 
 header nav {
