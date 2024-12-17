@@ -8,13 +8,14 @@
     --dark-gray: #1D1D1F;
     --accent-color: #0071E3;
     --hover-color: #022DAD;
+    --secondary-bg: #f9f9f9;
+    --border-color: #ddd;
 }
 
 /* ======================== */
 /* Styles communs */
 /* ======================== */
 
-/* Style général du corps */
 body {
     background-color: var(--white);
     color: var(--dark-gray);
@@ -123,7 +124,6 @@ footer nav a:hover {
 /* Page d'accueil (index.html) */
 /* ======================== */
 
-/* Section Héros */
 .home .hero {
     background-color: var(--light-gray);
     padding: 80px 20px;
@@ -145,7 +145,6 @@ footer nav a:hover {
     color: var(--dark-gray);
 }
 
-/* Section de présentation */
 .home .intro {
     padding: 60px 20px;
     text-align: center;
@@ -159,13 +158,6 @@ footer nav a:hover {
     margin-bottom: 20px;
 }
 
-.home .intro p {
-    font-size: 18px;
-    color: var(--dark-gray);
-    line-height: 1.8;
-}
-
-/* Points forts */
 .home .features {
     display: flex;
     flex-wrap: wrap;
@@ -191,79 +183,85 @@ footer nav a:hover {
 }
 
 /* ======================== */
-/* Page À propos (about.html) */
+/* Page About (about.html) */
 /* ======================== */
 
+.about-page {
+    background-color: var(--secondary-bg);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
 /* Hero Section */
-.about .hero {
+.about-page .hero {
     padding: 100px 20px;
     text-align: center;
-    background-color: var(--light-gray);
+    background-color: #e0f0ff;
 }
 
-.about .hero h1 {
-    font-size: 56px;
+.about-page .hero h1 {
+    font-size: 48px;
     margin-bottom: 20px;
-    color: var(--black);
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
-.about .hero p {
+.about-page .hero p {
     font-size: 20px;
-    max-width: 600px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Contenu principal */
+.about-page .content {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Mission Section */
-.about .mission {
+.about-page .content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-page .content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-page .content li {
+    margin: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 80px 40px;
-    background-color: var(--white);
+    justify-content: center;
+    gap: 10px;
 }
 
-.about .mission .text {
-    max-width: 500px;
+.about-page .content li::before {
+    content: '✓';
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.about .mission h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    color: var(--black);
-}
-
-.about .mission .image img {
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-/* Full-Width Image Section */
-.about .full-width-image img {
-    width: 100%;
-    display: block;
-}
-
-/* Offer Section */
-.about .offer {
-    padding: 100px 20px;
-    background-color: var(--light-gray);
+/* Section CTA */
+.about-page .cta {
     text-align: center;
+    padding: 60px 20px;
+    background-color: var(--accent-color);
+    color: var(--white);
 }
 
-.about .offer h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+.about-page .cta-button {
+    background-color: #005bb5;
+    border-radius: 5px;
 }
 
-.about .offer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.about .offer-item {
-    background-color: var(--white);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.about-page .cta-button:hover {
+    background-color: #004a94;
 }
