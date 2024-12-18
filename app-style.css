@@ -1,17 +1,17 @@
 /* General Reset */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
 }
 
 /* Header */
 header {
-    background-color: var(--white);
-    border-bottom: 1px solid var(--light-gray);
-    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,27 +26,27 @@ header a.logo-link {
 }
 
 header img {
-    height: 50px;
+    height: 40px;
     width: auto;
-    margin-right: auto;
+    margin-right: 20px;
 }
 
 header nav {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-left: auto;
 }
 
 header nav a {
-    color: var(--dark-gray);
-    font-weight: 500;
-    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    font-size: 18px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    color: var(--hover-color);
+    color: #007bff;
     text-decoration: underline;
 }
 
