@@ -82,13 +82,14 @@ header nav a:hover {
 
 /* Intro Subtitle */
 .intro-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: italic;
     color: var(--dark-gray);
     margin-top: 1rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: normal;
 }
 
 /* Theme Title */
