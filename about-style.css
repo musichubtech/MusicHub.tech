@@ -75,10 +75,11 @@ header nav a:hover {
 }
 
 .about-page h1 {
-    font-size: 3.5em;
-    font-weight: 700;
-    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
     color: var(--black);
+    text-align: center;
 }
 
 .about-page section {
@@ -86,10 +87,11 @@ header nav a:hover {
 }
 
 .about-page h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 600;
     margin-bottom: 20px;
     color: var(--black);
+    text-align: center;
 }
 
 .about-page p {
@@ -117,11 +119,20 @@ header nav a:hover {
     margin-bottom: 60px;
 }
 
+.about-page .offer-section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
 .about-page .offer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
+    list-style: none;
+    padding: 0;
 }
 
 .about-page .offer-item {
@@ -158,6 +169,20 @@ header nav a:hover {
     margin: 0;
 }
 
+/* Why MusicHub.tech Section */
+.about-page .why-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-page .why-section li::before {
+    content: '\2192'; /* Flèche bleue */
+    color: var(--accent-color);
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
 /* CTA Button - Specific to About Page */
 .about-page .cta-button {
     display: inline-block;
@@ -179,15 +204,15 @@ header nav a:hover {
 /* Get Started Section with Gray Background */
 .about-page .get-started {
     background: var(--light-gray);
-    padding: 40px 20px;
+    padding: 20px 20px;
     border-radius: 12px;
-    margin: 60px auto;
+    margin: 40px auto;
     max-width: 700px;
     text-align: center;
 }
 
 .about-page .get-started h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 600;
     color: var(--black);
     margin-bottom: 15px;
