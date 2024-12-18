@@ -151,13 +151,13 @@ header nav a:hover {
     display: inline-block;
     background: var(--accent-color);
     color: var(--white);
-    padding: 14px 28px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 6px;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1em;
     transition: background-color 0.3s ease;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .about-page .cta-button:hover {
@@ -167,49 +167,24 @@ header nav a:hover {
 /* Get Started Section with Gray Background */
 .about-page .get-started {
     background: var(--light-gray);
-    padding: 60px 20px;
-    border-radius: 16px;
-    margin: 60px auto;
-    max-width: 800px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 700px;
     text-align: center;
 }
 
 .about-page .get-started h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 600;
     color: var(--black);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .about-page .get-started p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: var(--dark-gray);
-    margin-bottom: 30px;
-}
-
-/* Why MusicHub.tech Section */
-.about-page .why-section ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.about-page .why-section li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.2em;
-    color: var(--dark-gray);
-}
-
-.about-page .why-section li::before {
-    content: '\279E'; /* Flèche droite élégante */
-    font-size: 1.5em;
-    color: var(--accent-color);
+    margin-bottom: 20px;
 }
 
 /* Footer */
