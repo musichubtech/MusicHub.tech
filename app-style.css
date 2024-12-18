@@ -70,11 +70,23 @@ header nav a:hover {
 .intro {
     text-align: center;
     padding: 4rem 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    color: var(--black);
+    color: var(--dark-gray);
     background-color: var(--white);
     margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Theme Title */
+.theme-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 2rem;
 }
 
 /* Applications Carousel Container */
@@ -105,7 +117,7 @@ header nav a:hover {
 
 /* Application Block */
 .app-block {
-    flex: 0 0 300px;
+    flex: 0 0 250px;
     scroll-snap-align: start;
     background-color: var(--light-gray);
     border-radius: 16px;
@@ -115,7 +127,7 @@ header nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .app-block:hover {
@@ -125,26 +137,26 @@ header nav a:hover {
 
 /* Application Image */
 .app-image img {
-    width: 150px;
+    width: 120px;
     height: auto;
     object-fit: contain;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Application Content */
 .app-content h2 {
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--black);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .app-content p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.4;
     color: var(--dark-gray);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Application Link */
@@ -152,11 +164,11 @@ header nav a:hover {
     display: inline-block;
     background-color: var(--accent-color);
     color: var(--white);
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: background-color 0.3s ease;
 }
 
