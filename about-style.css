@@ -173,20 +173,24 @@ header nav a:hover {
 .about-page .why-section ul {
     list-style: none;
     padding: 0;
+    text-align: center;
+}
+
+.about-page .why-section li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: var(--dark-gray);
 }
 
 .about-page .why-section li::before {
-    content: '→'; /* Flèche bleue */
+    content: '➔'; /* Flèche bleue */
     color: var(--accent-color);
     display: inline-block;
     margin-right: 10px;
     font-size: 1.2em;
-}
-
-.about-page .why-section li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: var(--dark-gray);
 }
 
 /* CTA Button - Specific to About Page */
