@@ -70,7 +70,7 @@ header nav a:hover {
 .intro {
     text-align: center;
     padding: 4rem 2rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--black);
     background-color: var(--white);
