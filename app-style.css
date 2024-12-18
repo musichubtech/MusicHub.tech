@@ -105,24 +105,45 @@ header nav a:hover {
     margin-bottom: 2rem;
 }
 
-/* Applications Container */
+/* Applications Container - Carousel */
 .apps-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 2rem;
-    padding: 0 2rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.apps-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.apps-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+.apps-container::-webkit-scrollbar-track {
+    background-color: var(--light-gray);
 }
 
 /* Application Block */
 .app-block {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
     background-color: var(--light-gray);
     border-radius: 16px;
     box-shadow: 0px 4px 15px var(--shadow-color);
-    width: 280px;
-    padding: 1.5rem;
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
 }
 
 .app-block:hover {
