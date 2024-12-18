@@ -103,6 +103,31 @@ header nav a:hover {
     font-weight: 600;
 }
 
+/* Why MusicHub.tech Section */
+.about-page .why-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.about-page .why-section li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    color: var(--dark-gray);
+}
+
+.about-page .why-section li::before {
+    content: '\279E'; /* Flèche droite élégante */
+    font-size: 1.5em;
+    color: var(--accent-color);
+}
+
 /* Our Key Focus Areas - Specific to About Page */
 .about-page .offer-section {
     display: flex;
