@@ -81,7 +81,7 @@ header nav a:hover {
 }
 
 /* Intro Subtitle */
-.intro-subtitle {
+.inspirational-quote {
     font-size: 1.2rem;
     font-style: italic;
     color: var(--dark-gray);
@@ -92,67 +92,37 @@ header nav a:hover {
     font-weight: normal;
 }
 
-/* Inspirational Quote */
-.inspirational-quote {
-    font-size: 1rem;
-    font-style: italic;
-    color: var(--dark-gray);
-    font-weight: normal;
-    margin-top: 1rem;
+/* Theme Section */
+.theme-section {
+    margin-bottom: 4rem;
     text-align: center;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* Theme Title */
 .theme-title {
-    text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--black);
     margin-bottom: 2rem;
 }
 
-/* Applications Carousel Container */
+/* Applications Container */
 .apps-container {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
-    padding: 2rem;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-.apps-container::-webkit-scrollbar {
-    height: 10px;
-}
-
-.apps-container::-webkit-scrollbar-thumb {
-    background-color: var(--accent-color);
-    border-radius: 10px;
-}
-
-.apps-container::-webkit-scrollbar-track {
-    background-color: var(--light-gray);
+    padding: 0 2rem;
 }
 
 /* Application Block */
 .app-block {
-    flex: 0 0 220px;
-    scroll-snap-align: start;
     background-color: var(--light-gray);
     border-radius: 16px;
     box-shadow: 0px 4px 15px var(--shadow-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 280px;
+    padding: 1.5rem;
     text-align: center;
-    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .app-block:hover {
@@ -170,7 +140,6 @@ header nav a:hover {
 
 /* Application Content */
 .app-content h2 {
-    margin-top: 0;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--black);
@@ -179,9 +148,8 @@ header nav a:hover {
 
 .app-content p {
     font-size: 0.9rem;
-    line-height: 1.4;
     color: var(--dark-gray);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Application Link */
@@ -194,12 +162,12 @@ header nav a:hover {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .app-link:hover {
     background-color: var(--hover-color);
-    color: var(--white); /* Assure que le texte reste blanc au survol */
+    color: var(--white);
 }
 
 /* Footer */
