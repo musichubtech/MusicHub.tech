@@ -77,30 +77,43 @@ header nav a:hover {
     margin-bottom: 4rem;
 }
 
-/* Applications Container */
+/* Applications Carousel Container */
 .apps-container {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.apps-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.apps-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+.apps-container::-webkit-scrollbar-track {
+    background-color: var(--light-gray);
 }
 
 /* Application Block */
 .app-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex: 0 0 300px;
+    scroll-snap-align: start;
     background-color: var(--light-gray);
     border-radius: 16px;
-    overflow: hidden;
     box-shadow: 0px 4px 15px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.app-block:nth-child(even) {
-    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
 }
 
 .app-block:hover {
@@ -110,30 +123,24 @@ header nav a:hover {
 
 /* Application Image */
 .app-image img {
-    width: 250px;
+    width: 150px;
     height: auto;
     object-fit: contain;
-    padding: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Application Content */
-.app-content {
-    padding: 2rem 3rem;
-    flex: 1;
-    text-align: left;
-}
-
 .app-content h2 {
     margin-top: 0;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--black);
     margin-bottom: 1rem;
 }
 
 .app-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5;
     color: var(--dark-gray);
     margin-bottom: 2rem;
 }
@@ -143,7 +150,7 @@ header nav a:hover {
     display: inline-block;
     background-color: var(--accent-color);
     color: var(--white);
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
