@@ -176,11 +176,17 @@ header nav a:hover {
 }
 
 .about-page .why-section li::before {
-    content: '\2192'; /* Flèche bleue */
+    content: '→'; /* Flèche bleue */
     color: var(--accent-color);
     display: inline-block;
     margin-right: 10px;
     font-size: 1.2em;
+}
+
+.about-page .why-section li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: var(--dark-gray);
 }
 
 /* CTA Button - Specific to About Page */
