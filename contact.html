@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - MusicHub.tech</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact-style.css">
 </head>
 <body>
     <header>
-        <img src="assets/logo.png" alt="MusicHub.tech Logo" width="100">
-        <h1>Contact Us</h1>
+        <a href="index.html" class="logo-link">
+            <img src="assets/logo.png" alt="MusicHub.tech Logo" width="100">
+        </a>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="apps.html">Applications</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="intro">
+            <p>Have questions or suggestions? We'd love to hear from you! Reach out to us via the form below or through our social channels.</p>
+        </section>
+
+        <section class="contact-form-section">
             <h2>Get in Touch</h2>
-            <p>
-                Have questions or suggestions? We'd love to hear from you! Reach out to us via the form below or through our social channels.
-            </p>
             <form action="https://formspree.io/f/xgvebbdj" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit" class="cta-button">Send Message</button>
             </form>
@@ -41,6 +44,10 @@
 
     <footer>
         <p>&copy; 2024 MusicHub.tech. All rights reserved.</p>
+        <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </nav>
     </footer>
 </body>
 </html>
