@@ -194,11 +194,12 @@ header nav a:hover {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .app-link:hover {
     background-color: var(--hover-color);
+    color: var(--white); /* Assure que le texte reste blanc au survol */
 }
 
 /* Footer */
