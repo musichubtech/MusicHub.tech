@@ -1,0 +1,32 @@
+name: Generate Blog Fiches
+
+on:
+  push:
+    paths:
+      - 'data/*.csv'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas jinja2
+
+      - name: Generate HTML files
+        run: python scripts/generate_fiches.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Auto-generate blog fiches from CSV'
+          file_pattern: 'blog/*.html'
