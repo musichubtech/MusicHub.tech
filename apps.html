@@ -127,9 +127,11 @@
         </nav>
     </footer>
 
+    <!-- JavaScript -->
     <script>
         function filterApps(category) {
             const sections = document.querySelectorAll('.theme-section');
+            const buttons = document.querySelectorAll('.filter button');
 
             sections.forEach(section => {
                 if (category === 'all' || section.classList.contains(category)) {
@@ -138,6 +140,9 @@
                     section.style.display = 'none';
                 }
             });
+
+            buttons.forEach(button => button.classList.remove('active'));
+            document.querySelector(`.filter button[onclick="filterApps('${category}')"]`).classList.add('active');
         }
     </script>
 </body>
