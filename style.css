@@ -243,3 +243,47 @@ footer nav a:hover {
         display: block;
     }
 }
+
+/* Menu Hamburger CSS */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Responsive Menu for Mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-menu ul.show {
+        display: flex;
+    }
+
+    .nav-menu ul li {
+        text-align: center;
+        margin: 15px 0;
+    }
+}
