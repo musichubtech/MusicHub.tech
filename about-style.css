@@ -76,8 +76,8 @@ header nav a:hover {
 
 .about-page h1 {
     font-size: 2.5em;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin-bottom: 2rem;
     color: var(--black);
     text-align: center;
 }
@@ -89,7 +89,7 @@ header nav a:hover {
 .about-page h2 {
     font-size: 2em;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     color: var(--black);
     text-align: center;
 }
