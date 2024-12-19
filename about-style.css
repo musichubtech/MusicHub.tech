@@ -83,7 +83,8 @@ header nav a:hover {
 }
 
 .about-page section {
-    margin-bottom: 60px;
+    margin-bottom: 3rem;
+    padding: 1rem;
 }
 
 .about-page h2 {
