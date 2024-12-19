@@ -7,6 +7,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 
 /* Style du corps */
@@ -126,6 +127,18 @@ header nav a:hover {
     border-radius: 8px;
     font-style: italic;
     color: #0077cc;
+}
+
+/* Google Ads Container */
+.google-ads {
+    width: 100%;
+    max-width: 728px;
+    margin: 2rem auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
 
 /* Citations */
