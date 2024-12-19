@@ -26,122 +26,89 @@
             <p class="inspirational-quote"><em>"Without music, life would be a mistake." — Friedrich Nietzsche</em></p>
         </section>
 
-        <!-- Streaming Platforms -->
-        <section class="theme-section">
-            <h2 class="theme-title">Streaming Platforms</h2>
-            <div class="apps-container">
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/audius-logo.png" alt="Audius Logo">
-                    </div>
-                    <div class="app-content">
-                        <h2>Audius</h2>
-                        <p>A decentralized streaming platform that allows artists to share and monetize their music directly with fans.</p>
-                        <a href="https://audius.co" target="_blank" class="app-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/rocki-logo.png" alt="ROCKI Logo">
-                    </div>
-                    <div class="app-content">
-                        <h2>ROCKI</h2>
-                        <p>A streaming platform using NFTs to help artists monetize their music and receive fair payments.</p>
-                        <a href="https://rocki.com" target="_blank" class="app-link">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Filtres de Catégories -->
+        <nav class="filter">
+            <button onclick="filterApps('all')">All</button>
+            <button onclick="filterApps('streaming')">Streaming Platforms</button>
+            <button onclick="filterApps('ai')">AI Tools</button>
+            <button onclick="filterApps('sound-design')">AI Tools for Sound Design</button>
+            <button onclick="filterApps('blockchain')">Blockchain Tools</button>
+        </nav>
 
-        <!-- AI Tools -->
-        <section class="theme-section">
-            <h2 class="theme-title">AI Tools</h2>
-            <div class="apps-container">
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/aiva-logo.png" alt="AIVA Logo">
-                    </div>
-                    <div class="app-content">
-                        <h2>AIVA</h2>
-                        <p>An AI-driven music composition tool that helps you create unique and copyright-protected music pieces.</p>
-                        <a href="https://www.aiva.ai" target="_blank" class="app-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/boomy-logo.png" alt="Boomy Logo">
-                    </div>
-                    <div class="app-content">
-                        <h2>Boomy</h2>
-                        <p>Create songs in minutes using AI and distribute them on streaming platforms.</p>
-                        <a href="https://boomy.com" target="_blank" class="app-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/amper-logo.png" alt="Amper Logo">
-                    </div>
-                    <div class="app-content">
-                        <h2>Amper</h2>
-                        <p>AI tool for creating music tracks and soundtracks quickly for your projects.</p>
-                        <a href="https://www.ampermusic.com" target="_blank" class="app-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/soundraw-logo.png" alt="Soundraw Logo">
-                    </div>
-                    <div class="app-content">
-                        <h2>Soundraw</h2>
-                        <p>AI-powered music generator that lets you customize tracks for your needs.</p>
-                        <a href="https://soundraw.io" target="_blank" class="app-link">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Applications -->
+        <section id="app-container">
 
-        <!-- AI Tools for Sound Design -->
-        <section class="theme-section">
-            <h2 class="theme-title">AI Tools for Sound Design</h2>
-            <div class="apps-container">
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/krisp-logo.png" alt="Krisp Logo">
+            <!-- Streaming Platforms -->
+            <div class="theme-section streaming">
+                <h2 class="theme-title">Streaming Platforms</h2>
+                <div class="apps-container">
+                    <div class="app-block">
+                        <div class="app-image">
+                            <img src="assets/audius-logo.png" alt="Audius Logo">
+                        </div>
+                        <div class="app-content">
+                            <h2>Audius</h2>
+                            <p>A decentralized streaming platform that allows artists to share and monetize their music directly with fans.</p>
+                            <a href="https://audius.co" target="_blank" class="app-link">Learn More</a>
+                        </div>
                     </div>
-                    <div class="app-content">
-                        <h2>Krisp</h2>
-                        <p>An AI-powered noise cancellation tool to enhance audio quality in real-time.</p>
-                        <a href="https://krisp.ai" target="_blank" class="app-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/izotope-logo.png" alt="iZotope Logo">
-                    </div>
-                    <div class="app-content">
-                        <h2>iZotope</h2>
-                        <p>Advanced AI-driven audio repair and mastering tools for sound design and production.</p>
-                        <a href="https://www.izotope.com" target="_blank" class="app-link">Learn More</a>
+                    <div class="app-block">
+                        <div class="app-image">
+                            <img src="assets/rocki-logo.png" alt="ROCKI Logo">
+                        </div>
+                        <div class="app-content">
+                            <h2>ROCKI</h2>
+                            <p>A streaming platform using NFTs to help artists monetize their music and receive fair payments.</p>
+                            <a href="https://rocki.com" target="_blank" class="app-link">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Blockchain Tools -->
-        <section class="theme-section">
-            <h2 class="theme-title">Blockchain Tools</h2>
-            <div class="apps-container">
-                <div class="app-block">
-                    <div class="app-image">
-                        <img src="assets/allfeat-logo.png" alt="Allfeat Logo">
+            <!-- AI Tools -->
+            <div class="theme-section ai">
+                <h2 class="theme-title">AI Tools</h2>
+                <div class="apps-container">
+                    <div class="app-block">
+                        <div class="app-image">
+                            <img src="assets/aiva-logo.png" alt="AIVA Logo">
+                        </div>
+                        <div class="app-content">
+                            <h2>AIVA</h2>
+                            <p>An AI-driven music composition tool that helps you create unique and copyright-protected music pieces.</p>
+                            <a href="https://www.aiva.ai" target="_blank" class="app-link">Learn More</a>
+                        </div>
                     </div>
-                    <div class="app-content">
-                        <h2>Allfeat</h2>
-                        <p>An open-source blockchain infrastructure designed to enhance the music industry experience for artists and fans.</p>
-                        <a href="https://allfeat.com" target="_blank" class="app-link">Learn More</a>
+                    <div class="app-block">
+                        <div class="app-image">
+                            <img src="assets/boomy-logo.png" alt="Boomy Logo">
+                        </div>
+                        <div class="app-content">
+                            <h2>Boomy</h2>
+                            <p>Create songs in minutes using AI and distribute them on streaming platforms.</p>
+                            <a href="https://boomy.com" target="_blank" class="app-link">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Blockchain Tools -->
+            <div class="theme-section blockchain">
+                <h2 class="theme-title">Blockchain Tools</h2>
+                <div class="apps-container">
+                    <div class="app-block">
+                        <div class="app-image">
+                            <img src="assets/allfeat-logo.png" alt="Allfeat Logo">
+                        </div>
+                        <div class="app-content">
+                            <h2>Allfeat</h2>
+                            <p>An open-source blockchain infrastructure designed to enhance the music industry experience for artists and fans.</p>
+                            <a href="https://allfeat.com" target="_blank" class="app-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -152,5 +119,19 @@
             <a href="#">Terms of Service</a>
         </nav>
     </footer>
+
+    <script>
+        function filterApps(category) {
+            const sections = document.querySelectorAll('.theme-section');
+
+            sections.forEach(section => {
+                if (category === 'all' || section.classList.contains(category)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
