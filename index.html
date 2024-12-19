@@ -82,11 +82,16 @@
     </ul>
 </nav>
 <script src="scripts/hamburger-menu.js"></script>
-    <script>
-    function toggleMenu() {
-        const navMenu = document.getElementById('navMenu').querySelector('ul');
-        navMenu.classList.toggle('show');
-    }
+   <script>
+    fetch('scripts/hamburger-menu.js')
+        .then(response => {
+            if (response.ok) {
+                console.log('hamburger-menu.js chargé avec succès');
+            } else {
+                console.error('Erreur de chargement du fichier JS');
+            }
+        })
+        .catch(error => console.error('Erreur réseau :', error));
 </script>
 </body>
 </html>
