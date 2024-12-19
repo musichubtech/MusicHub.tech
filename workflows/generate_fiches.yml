@@ -3,7 +3,7 @@ name: Generate Blog Fiches
 on:
   push:
     paths:
-      - 'data/*.csv'  # Déclenche le workflow si le fichier CSV est modifié
+      - 'data/*.csv'
 
 jobs:
   build:
