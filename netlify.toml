@@ -1,3 +1,0 @@
-[build]
-command = "python scripts/generate_fiches.py"
-publish = "."
