@@ -97,20 +97,18 @@ header nav a:hover {
 }
 
 .cta-button {
-    display: inline-block;
     background-color: var(--accent-color);
     color: var(--white);
-    padding: 14px 28px;
+    padding: 0.8rem 1.5rem;
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
     background-color: var(--hover-color);
-    color: var(--white);
+    transform: translateY(-3px);
 }
 
 /* Section de présentation */
@@ -180,6 +178,10 @@ header nav a:hover {
     font-size: 32px;
     color: var(--black);
     margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 4rem;
 }
 
 /* Footer */
