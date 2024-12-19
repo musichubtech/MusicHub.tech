@@ -263,27 +263,13 @@ footer nav a:hover {
 }
 
 /* Responsive Menu for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    .nav-menu ul {
+        display: none;
+    }
+
     .menu-icon {
         display: block;
     }
-
-    .nav-menu ul {
-        display: none;
-        flex-direction: column;
-        background-color: #fff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-    }
-
-    .nav-menu ul.show {
-        display: flex;
-    }
-
-    .nav-menu ul li {
-        text-align: center;
-        margin: 15px 0;
-    }
+}
 }
