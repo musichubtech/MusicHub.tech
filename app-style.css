@@ -36,6 +36,15 @@ header {
     z-index: 1000;
 }
 
+/* Application Image avec Ombre Globale */
+.app-image img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3)); /* Ombre légère autour des logos */
+}
+
 /* Filters Navigation */
 .filter {
     display: flex;
