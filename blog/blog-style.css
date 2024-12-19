@@ -120,3 +120,29 @@ blockquote {
     padding-left: 1rem;
     margin: 1.5rem 0;
 }
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 1px solid var(--light-gray);
+    font-size: 12px;
+}
+
+footer nav {
+    margin-top: 5px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    font-size: 12px;
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
