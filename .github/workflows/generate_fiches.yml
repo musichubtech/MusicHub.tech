@@ -1,9 +1,10 @@
 name: Generate Blog Fiches
 
 on:
+  workflow_dispatch:  # Permet d'exécuter manuellement le workflow
   push:
     paths:
-      - 'data/*.csv'
+      - 'data/*.csv'  # Déclenche le workflow quand un fichier CSV dans data/ est modifié
 
 jobs:
   build:
