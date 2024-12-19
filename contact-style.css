@@ -27,7 +27,7 @@ body {
     padding: 2rem;
 }
 
-/* Header */
+/* Header fixe et stable */
 header {
     background-color: var(--white);
     border-bottom: 1px solid var(--light-gray);
@@ -36,11 +36,18 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box; /* Assure que padding et bordures sont inclus dans la largeur */
 }
 
-header nav a.active {
-    color: var(--hover-color);
+/* Empêche le décalage dû à la barre de défilement */
+html {
+    overflow-y: scroll;
 }
+
 
 /* Titre principal */
 .intro h1 {
