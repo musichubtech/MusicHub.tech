@@ -45,6 +45,21 @@ header {
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3)); /* Ombre légère autour des logos */
 }
 
+/* Titre Principal */
+.intro h1 {
+    font-size: 2.5rem; /* Taille réduite */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Sous-Titres des Sections */
+.theme-title {
+    font-size: 2rem; /* Taille ajustée pour les sous-titres */
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
 /* Filters Navigation */
 .filter {
     display: flex;
