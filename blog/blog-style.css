@@ -1,0 +1,79 @@
+/* Conteneur Principal */
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Titres */
+.blog-post h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #2a2a2a;
+    margin-bottom: 1rem;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    color: #0077cc;
+    margin-top: 2rem;
+}
+
+/* Texte Principal */
+.blog-post p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/* Images */
+.blog-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+}
+
+/* Bouton CTA */
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+}
+
+/* Bloc Publicitaire */
+.ad-space {
+    background-color: #e0f1ff;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+    border: 1px solid #0077cc;
+    border-radius: 8px;
+    font-style: italic;
+    color: #0077cc;
+}
+
+/* Citations */
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #0077cc;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
