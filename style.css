@@ -276,3 +276,15 @@ footer nav a:hover {
     }
 }
 
+/* Navigation Menu - Version Desktop */
+header nav {
+    display: flex;
+}
+
+/* Cacher le menu principal sur mobile */
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+}
+
+
