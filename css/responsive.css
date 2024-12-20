@@ -70,8 +70,8 @@
 
     .contact-form-section {
         max-width: 100%;           /* Utilise toute la largeur disponible */
-        padding: 1rem;             /* Réduit le padding */
-        margin: 1rem;              /* Réduit la marge */
+        padding: 10px;             /* Réduit le padding */
+        margin: 10px;              /* Réduit la marge */
     }
 
     .contact-form-section h2 {
@@ -111,7 +111,7 @@
 
     button.cta-button {
         padding: 0.5rem;           /* Bouton plus petit */
-        font-size: 0.8rem;
+        font-size: 14px;
     }
 
     .intro h1 {
