@@ -40,3 +40,22 @@
         margin: 5px 0;
     }
 }
+
+/* ============================
+   Responsive Design - Page Apps
+   ============================ */
+
+@media (max-width: 768px) {
+    .filter {
+        flex-direction: column;     /* Empile les boutons verticalement */
+        gap: 10px;                  /* Espacement réduit entre les boutons */
+        padding: 10px;              /* Réduire le padding */
+        max-width: 100%;            /* Utilise toute la largeur disponible */
+    }
+
+    .filter button {
+        width: 100%;                /* Les boutons prennent toute la largeur */
+        text-align: center;
+    }
+}
+
