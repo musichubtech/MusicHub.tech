@@ -124,38 +124,54 @@
     }
 }
 
-/* Responsive pour très petits écrans comme l'iPhone 15 */
+/* Responsive pour écrans très petits (max-width: 400px) */
 @media (max-width: 400px) {
     .contact-form-section {
-        max-width: 90%;           /* Utilise 90% de la largeur pour éviter les bords */
-        margin: 0 auto;           /* Centre le formulaire horizontalement */
-        padding: 10px;            /* Ajoute un padding intérieur pour l'aération */
+        width: 100%;             /* Utilise toute la largeur disponible */
+        max-width: 100%;         /* Évite tout débordement */
+        margin: 0 auto;          /* Centre le formulaire horizontalement */
+        padding: 15px;           /* Padding pour éviter les bords de l'écran */
+        box-sizing: border-box;  /* Inclut le padding dans la largeur totale */
     }
 
     form {
-        display: flex;            /* Utilise flexbox pour gérer le centrage */
-        flex-direction: column;   /* Aligne les champs verticalement */
-        gap: 10px;                /* Espacement uniforme entre les champs */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;               /* Espacement entre les champs */
+        margin: 0 auto;          /* Centre le formulaire */
+        width: 100%;
     }
 
     form input,
     form textarea {
-        width: 100%;              /* Assure que les champs prennent toute la largeur */
-        font-size: 14px;          /* Taille de police lisible sur petits écrans */
-        padding: 8px;             /* Padding suffisant pour le confort d'utilisation */
-        box-sizing: border-box;   /* Inclut le padding et la bordure dans la largeur totale */
+        width: 100%;             /* Assure que les champs remplissent le conteneur */
+        font-size: 16px;         /* Taille de police adaptée aux petits écrans */
+        padding: 12px;           /* Padding suffisant pour le confort */
+        border: 1px solid #ccc;  /* Bordure légère pour la clarté */
+        border-radius: 5px;      /* Coins arrondis pour un look moderne */
     }
 
     button.cta-button {
-        width: 100%;              /* Le bouton prend toute la largeur du formulaire */
-        font-size: 14px;          /* Taille de police lisible */
-        padding: 12px;            /* Ajuste le padding du bouton pour le confort */
+        width: 100%;             /* Le bouton s'étend sur toute la largeur */
+        padding: 12px;
+        font-size: 16px;
+        background-color: var(--accent-color);
+        color: var(--white);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button.cta-button:hover {
+        background-color: var(--hover-color);
     }
 
     h2 {
-        font-size: 22px;          /* Réduit la taille du titre pour éviter le débordement */
-        text-align: center;       /* Centre le titre */
+        font-size: 24px;         /* Taille de titre réduite pour s’adapter */
+        text-align: center;      /* Centre le titre */
+        margin-bottom: 20px;
     }
 }
+
 
 
