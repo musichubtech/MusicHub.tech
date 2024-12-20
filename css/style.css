@@ -1,57 +1,107 @@
-/* ============================
-   Palette de Couleurs Sobre
-   ============================ */
-:root {
-    --white: #FFFFFF;
-    --black: #000000;
-    --light-gray: #F5F5F7;
-    --dark-gray: #1D1D1F;
-    --accent-color: #0071E3;
-    --hover-color: #022DAD;
+/* Section Héros */
+.hero {
+    background-color: var(--light-gray);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--light-gray);
 }
 
-/* ============================
-   Styles Généraux du Corps
-   ============================ */
-body {
-    background-color: var(--white);
-    color: var(--dark-gray);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-}
-
-/* ============================
-   Liens Globaux
-   ============================ */
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--hover-color);
-    text-decoration: none;
-}
-
-/* ============================
-   Titres Globaux
-   ============================ */
-h1, h2, h3 {
+.hero h1 {
+    font-size: 48px;
     color: var(--black);
-    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-/* ============================
-   Conteneur Global
-   ============================ */
-.container {
-    max-width: 1200px;
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--dark-gray);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: var(--hover-color);
+    color: var(--white);
+}
+
+/* Section de présentation */
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+/* Points forts */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--white);
+}
+
+.feature {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
     padding: 20px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+/* CTA Secondaire */
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--light-gray);
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    color: var(--black);
+    margin-bottom: 20px;
 }
