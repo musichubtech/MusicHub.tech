@@ -1,1 +1,80 @@
 
+/* Menu Hamburger Icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.menu-icon:hover {
+    background-color: var(--hover-color);
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu ul li a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Cacher le menu par défaut sur mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--white);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-menu ul.show {
+        display: flex;
+    }
+
+    .nav-menu ul li {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid var(--light-gray);
+    }
+}
+
+/* Navigation Menu - Version Desktop */
+header nav {
+    display: flex;
+}
+
+/* Cacher le menu principal sur mobile */
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+}
