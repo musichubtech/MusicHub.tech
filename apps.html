@@ -149,5 +149,30 @@
             document.querySelector(`.filter button[onclick="filterApps('${category}')"]`).classList.add('active');
         }
     </script>
+
+<!-- Bouton Menu Hamburger -->
+<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menu Navigation -->
+<nav class="nav-menu" id="navMenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="apps.html">Applications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<script src="scripts/hamburger-menu.js"></script>
+    <script>
+    function toggleMenu() {
+        const navMenu = document.getElementById('navMenu').querySelector('ul');
+        if (navMenu) {
+            console.log('Menu trouvé');
+            navMenu.classList.toggle('show');
+        } else {
+            console.error('Menu non trouvé');
+        }
+    }
+</script>
 </body>
 </html>
