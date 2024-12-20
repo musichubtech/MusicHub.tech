@@ -1,1 +1,23 @@
+/* Footer */
+footer {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--light-gray);
+    font-size: 14px;
+}
 
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+footer nav a:hover {
+    color: var(--hover-color);
+}
