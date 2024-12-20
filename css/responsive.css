@@ -127,27 +127,35 @@
 /* Responsive pour très petits écrans comme l'iPhone 15 */
 @media (max-width: 400px) {
     .contact-form-section {
-        max-width: 100%;        /* Utiliser toute la largeur disponible */
-        padding: 5px;           /* Réduire le padding pour maximiser l'espace */
-        margin: 5px auto;       /* Assurer un centrage avec une marge réduite */
+        max-width: 90%;           /* Utilise 90% de la largeur pour éviter les bords */
+        margin: 0 auto;           /* Centre le formulaire horizontalement */
+        padding: 10px;            /* Ajoute un padding intérieur pour l'aération */
+    }
+
+    form {
+        display: flex;            /* Utilise flexbox pour gérer le centrage */
+        flex-direction: column;   /* Aligne les champs verticalement */
+        gap: 10px;                /* Espacement uniforme entre les champs */
     }
 
     form input,
     form textarea {
-        width: 100%;            /* Assurer que les champs occupent toute la largeur */
-        font-size: 12px;        /* Réduire légèrement la taille de police */
-        padding: 6px;           /* Réduire le padding des champs */
+        width: 100%;              /* Assure que les champs prennent toute la largeur */
+        font-size: 14px;          /* Taille de police lisible sur petits écrans */
+        padding: 8px;             /* Padding suffisant pour le confort d'utilisation */
+        box-sizing: border-box;   /* Inclut le padding et la bordure dans la largeur totale */
     }
 
     button.cta-button {
-        font-size: 12px;        /* Adapter la taille de police du bouton */
-        padding: 10px;          /* Ajuster le padding du bouton pour éviter le dépassement */
+        width: 100%;              /* Le bouton prend toute la largeur du formulaire */
+        font-size: 14px;          /* Taille de police lisible */
+        padding: 12px;            /* Ajuste le padding du bouton pour le confort */
     }
 
     h2 {
-        font-size: 20px;        /* Ajuster le titre pour qu’il ne soit pas trop large */
+        font-size: 22px;          /* Réduit la taille du titre pour éviter le débordement */
+        text-align: center;       /* Centre le titre */
     }
 }
-
 
 
