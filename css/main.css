@@ -2,9 +2,24 @@
    Importation des Fichiers CSS
    ============================ */
 
+/* ============================
+   Importation des Styles du Header
+============================ */
 @import url('header.css');
+
+/* ============================
+   Importation des Styles du Footer
+============================ */
 @import url('footer.css');
+
+/* ============================
+   Importation des Styles du Hamberger-menu
+============================ */
 @import url('components/hamburger-menu.css');
+
+/* ============================
+   Importation des Styles du Ressponsive global
+============================ */
 @import url('responsive.css');
 
 /* ============================
