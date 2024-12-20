@@ -1,168 +1,160 @@
-/* Main Content - Specific to About Page */
-.about-page main {
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 20px;
-    text-align: center;
+/* Application Image avec Ombre Globale */
+.app-image img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3)); /* Ombre légère autour des logos */
 }
 
-.about-page h1 {
-    font-size: 2.5em;
+/* Titre Principal */
+.intro h1 {
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 2rem;
-    color: var(--black);
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-.about-page section {
-    margin-bottom: 3rem;
-    padding: 1rem;
-}
-
-.about-page h2 {
-    font-size: 2em;
+/* Sous-Titres des Sections */
+.theme-title {
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: var(--black);
     text-align: center;
 }
 
-.about-page p {
-    font-size: 1.2em;
-    color: var(--dark-gray);
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about-page strong {
-    color: var(--accent-color);
-    font-weight: 600;
-}
-
-/* Our Key Focus Areas - Specific to About Page */
-.about-page .offer-section {
+/* Filters Navigation */
+.filter {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 60px;
-}
-
-.about-page .offer-section h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: var(--black);
-    margin-bottom: 20px;
-}
-
-.about-page .offer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-}
-
-.about-page .offer-item {
-    background: var(--light-gray);
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px var(--shadow-color);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-page .offer-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px var(--shadow-color);
-}
-
-.about-page .offer-item .emoji {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-}
-
-.about-page .offer-item strong {
-    display: block;
-    font-size: 1.4em;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: var(--dark-gray);
-}
-
-.about-page .offer-item p {
-    font-size: 1em;
-    color: var(--dark-gray);
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Why MusicHub.tech Section */
-.about-page .why-section ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.about-page .why-section li {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-    font-size: 1.1em;
+    gap: 15px;
+    margin: 2rem 0;
+}
+
+.filter button {
+    padding: 10px 20px;
+    background: var(--filter-bg);
     color: var(--dark-gray);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
 }
 
-.about-page .why-section li::before {
-    content: '➔'; /* Flèche bleue */
-    color: var(--accent-color);
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 1.2em;
-}
-
-/* CTA Button - Specific to About Page */
-.about-page .cta-button {
-    display: inline-block;
+.filter button:hover {
     background: var(--accent-color);
     color: var(--white);
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
 }
 
-.about-page .cta-button:hover {
-    background-color: var(--hover-color);
+.filter button:focus {
+    background: var(--hover-color);
+    color: var(--white);
 }
 
-/* Get Started Section with Gray Background */
-.about-page .get-started {
-    background: var(--light-gray);
-    padding: 20px 20px;
-    border-radius: 12px;
-    margin: 40px auto;
-    max-width: 700px;
+/* Style pour le bouton actif */
+.filter button.active {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+    background-color: var(--white);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Inspirational Quote */
+.inspirational-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--dark-gray);
+    margin-top: 1rem;
+}
+
+/* Theme Section */
+.theme-section {
+    margin-bottom: 4rem;
     text-align: center;
 }
 
-.about-page .get-started h2 {
-    font-size: 1.8em;
-    font-weight: 600;
+.theme-title {
+    font-size: 2.5rem;
+    font-weight: 700;
     color: var(--black);
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
 }
 
-.about-page .get-started p {
-    font-size: 1em;
+/* Applications Container */
+.apps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Application Block */
+.app-block {
+    background-color: var(--light-gray);
+    border-radius: 16px;
+    box-shadow: 0px 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.app-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px var(--shadow-color);
+}
+
+/* Application Image */
+.app-image img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+/* Application Content */
+.app-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+}
+
+.app-content p {
+    font-size: 1rem;
     color: var(--dark-gray);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+}
+
+/* Application Link (CTA) */
+.app-link {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.app-link:hover {
+    background-color: var(--hover-color);
+    color: var(--white);
 }
