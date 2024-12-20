@@ -18,9 +18,15 @@
 @import url('components/hamburger-menu.css');
 
 /* ============================
-   Importation des Styles du Ressponsive global
+   Importation des Styles du Responsive global
 ============================ */
 @import url('responsive.css');
+
+/* ============================
+   Importation des Styles du style général de la page d'acceuil
+============================ */
+@import url('style.css');
+
 
 /* ============================
    Variables Globales
