@@ -1,5 +1,6 @@
-
-/* Header */
+/* ============================
+   Styles pour le Header
+============================ */
 header {
     background-color: var(--white);
     border-bottom: 1px solid var(--light-gray);
@@ -13,6 +14,9 @@ header {
     z-index: 1000;
 }
 
+/* ============================
+   Styles pour le Logo
+============================ */
 header a.logo-link {
     display: inline-block;
 }
@@ -23,6 +27,9 @@ header img {
     margin-right: auto;
 }
 
+/* ============================
+   Styles pour la Navigation
+============================ */
 header nav {
     display: flex;
     gap: 20px;
