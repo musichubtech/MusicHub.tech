@@ -1,3 +1,4 @@
+
 /* Conteneur Principal */
 .blog-post {
     max-width: 800px;
@@ -230,5 +231,133 @@ footer nav a:hover {
 
     .menu-icon {
         display: block;
+    }
+}
+
+/* Ajouts d'amélioration */
+
+/* Sous-titres améliorés */
+.blog-post h2 {
+    font-size: 1.8rem;
+    color: #0077cc;
+    background: linear-gradient(to right, #0077cc, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+/* Amélioration du bouton CTA */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 119, 204, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 95, 163, 0.5);
+}
+
+/* Amélioration du responsive design pour les smartphones */
+@media (max-width: 480px) {
+    .blog-post {
+        padding: 1rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Conteneur Principal */
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+/* Style du corps */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Sous-titres améliorés */
+.blog-post h2 {
+    font-size: 1.8rem;
+    color: #0077cc;
+    background: linear-gradient(to right, #0077cc, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+/* Amélioration du bouton CTA */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 119, 204, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 95, 163, 0.5);
+}
+
+/* Amélioration du responsive design pour les smartphones */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .blog-post {
+        padding: 1rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
     }
 }
