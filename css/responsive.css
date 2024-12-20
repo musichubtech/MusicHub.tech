@@ -124,4 +124,30 @@
     }
 }
 
+/* Responsive pour très petits écrans comme l'iPhone 15 */
+@media (max-width: 400px) {
+    .contact-form-section {
+        max-width: 100%;        /* Utiliser toute la largeur disponible */
+        padding: 5px;           /* Réduire le padding pour maximiser l'espace */
+        margin: 5px auto;       /* Assurer un centrage avec une marge réduite */
+    }
+
+    form input,
+    form textarea {
+        width: 100%;            /* Assurer que les champs occupent toute la largeur */
+        font-size: 12px;        /* Réduire légèrement la taille de police */
+        padding: 6px;           /* Réduire le padding des champs */
+    }
+
+    button.cta-button {
+        font-size: 12px;        /* Adapter la taille de police du bouton */
+        padding: 10px;          /* Ajuster le padding du bouton pour éviter le dépassement */
+    }
+
+    h2 {
+        font-size: 20px;        /* Ajuster le titre pour qu’il ne soit pas trop large */
+    }
+}
+
+
 
