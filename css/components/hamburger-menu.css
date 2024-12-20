@@ -14,7 +14,7 @@
     top: 20px;
     right: 20px;
     z-index: 1001;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
 }
 
 .menu-icon:hover {
@@ -47,6 +47,8 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: translateY(-10px);
     opacity: 0;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .nav-menu ul.show {
@@ -73,6 +75,10 @@
 
 .nav-menu ul li a:hover {
     background-color: var(--light-gray);
+}
+
+.nav-menu ul li a:focus {
+    outline: 2px solid var(--hover-color);
 }
 
 /* ============================
