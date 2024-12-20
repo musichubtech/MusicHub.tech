@@ -59,3 +59,68 @@
     }
 }
 
+/* ============================
+   Responsive Design - Page Contact
+   ============================ */
+
+@media (max-width: 768px) {
+    body.contact-page {
+        font-size: 16px;
+    }
+
+    .contact-form-section {
+        max-width: 100%;           /* Utilise toute la largeur disponible */
+        padding: 1rem;             /* Réduit le padding */
+        margin: 1rem;              /* Réduit la marge */
+    }
+
+    .contact-form-section h2 {
+        font-size: 1.3rem;         /* Réduit la taille du titre */
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;         /* Réduit la taille des champs */
+    }
+
+    button.cta-button {
+        padding: 0.5rem;           /* Réduit le padding du bouton */
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body.contact-page {
+        font-size: 14px;
+    }
+
+    .contact-form-section {
+        padding: 0.8rem;           /* Réduit encore le padding */
+        margin: 0.5rem;            /* Réduit la marge */
+    }
+
+    .contact-form-section h2 {
+        font-size: 1.2rem;         /* Taille de titre plus petite */
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.8rem;         /* Champs plus petits */
+        padding: 0.5rem;           /* Réduit le padding des champs */
+    }
+
+    button.cta-button {
+        padding: 0.5rem;           /* Bouton plus petit */
+        font-size: 0.8rem;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;         /* Réduit la taille du titre principal */
+    }
+
+    .intro p {
+        font-size: 1rem;           /* Réduit la taille du texte d'introduction */
+    }
+}
+
+
