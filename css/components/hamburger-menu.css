@@ -11,10 +11,10 @@
     color: var(--white);
     border-radius: 5px;
     position: fixed;
-    top: 20px;
+    top: 15px;
     right: 20px;
     z-index: 1001;
-    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .menu-icon:hover {
@@ -25,7 +25,6 @@
 .menu-icon:focus {
     outline: 2px solid var(--hover-color);
 }
-
 
 /* ============================
    Navigation Menu for Mobile
@@ -39,7 +38,7 @@
     flex-direction: column;
     background-color: var(--white);
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -79,22 +78,4 @@
 
 .nav-menu ul li a:focus {
     outline: 2px solid var(--hover-color);
-}
-
-/* ============================
-   Responsive for Mobile Devices
-   ============================ */
-
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block; /* Afficher le bouton hamburger */
-    }
-
-    .nav-menu ul {
-        display: none; /* Par défaut, le menu est caché */
-    }
-
-    .nav-menu ul.show {
-        display: flex; /* Afficher le menu quand on clique */
-    }
 }
