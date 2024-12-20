@@ -1,7 +1,9 @@
+/* ============================
+   Hamburger Menu Icon
+   ============================ */
 
-/* Menu Hamburger Icon */
 .menu-icon {
-    display: none;
+    display: none; /* Caché par défaut sur desktop */
     font-size: 28px;
     cursor: pointer;
     padding: 10px;
@@ -12,69 +14,71 @@
     top: 20px;
     right: 20px;
     z-index: 1001;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .menu-icon:hover {
     background-color: var(--hover-color);
+    transform: scale(1.1);
 }
 
-/* Navigation Menu */
-.nav-menu {
-    display: flex;
-    justify-content: center;
-}
+/* ============================
+   Navigation Menu for Mobile
+   ============================ */
 
 .nav-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 20px;
+    display: none; /* Caché par défaut */
+    flex-direction: column;
+    background-color: var(--white);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-menu ul.show {
+    display: flex; /* Afficher le menu déroulant */
+}
+
+.nav-menu ul li {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .nav-menu ul li a {
     color: var(--dark-gray);
-    text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-/* Cacher le menu par défaut sur mobile */
+.nav-menu ul li a:hover {
+    background-color: var(--light-gray);
+}
+
+/* ============================
+   Responsive for Mobile Devices
+   ============================ */
+
 @media (max-width: 768px) {
     .menu-icon {
-        display: block;
+        display: block; /* Afficher le bouton hamburger */
     }
 
     .nav-menu ul {
-        display: none;
-        flex-direction: column;
-        background-color: var(--white);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+        display: none; /* Par défaut, le menu est caché */
     }
 
     .nav-menu ul.show {
-        display: flex;
+        display: flex; /* Afficher le menu quand on clique */
     }
-
-    .nav-menu ul li {
-        text-align: center;
-        padding: 15px;
-        border-bottom: 1px solid var(--light-gray);
-    }
-}
-
-/* Navigation Menu - Version Desktop */
-header nav {
-    display: flex;
-}
-
-/* Cacher le menu principal sur mobile */
-@media (max-width: 768px) {
-    header nav {
-        display: none;
 }
