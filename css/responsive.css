@@ -1,71 +1,23 @@
-
 /* ============================
-   Responsive Design - Header
+   Responsive for Mobile Devices
    ============================ */
 
-/* Pour les tablettes et smartphones */
 @media (max-width: 768px) {
-    header {
-        padding: 10px 20px;
+    .menu-icon {
+        display: block; /* Afficher le bouton hamburger */
     }
 
     header nav {
         display: none; /* Cacher le menu principal */
     }
 
-    .menu-icon {
-        display: block; /* Afficher le menu hamburger */
-        font-size: 28px;
-        cursor: pointer;
-        padding: 10px;
-        background-color: var(--accent-color);
-        color: var(--white);
-        border-radius: 5px;
-        position: fixed;
-        top: 15px;
-        right: 20px;
-        z-index: 1001;
-    }
-
-    .menu-icon:hover {
-        background-color: var(--hover-color);
-    }
-
     .nav-menu ul {
-        display: none;
-        flex-direction: column;
-        background-color: var(--white);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 0;
-        transition: transform 0.4s ease, opacity 0.4s ease;
-        max-height: 90vh;
-        overflow-y: auto;
+        display: none; /* Par défaut, le menu est caché */
     }
 
     .nav-menu ul.show {
-        display: flex; /* Afficher le menu déroulant */
+        display: flex; /* Afficher le menu quand on clique */
     }
-
-    .nav-menu ul li {
-        text-align: center;
-        padding: 15px;
-        border-bottom: 1px solid var(--light-gray);
-    }
-
-    .nav-menu ul li a {
-        color: var(--dark-gray);
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-   .nav-menu ul li a:focus {
-    outline: 2px solid var(--hover-color);
-}
 }
 
 /* ============================
@@ -86,69 +38,5 @@
 
     footer nav a {
         margin: 5px 0;
-    }
-}
-
-/* ============================
-   Responsive Design - Sections
-   ============================ */
-
-/* Section Héros */
-@media (max-width: 768px) {
-    .hero {
-        padding: 60px 20px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        padding: 40px 15px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-}
-
-/* Section Features */
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .feature {
-        max-width: 100%;
-        padding: 15px;
-    }
-}
-
-/* ============================
-   Responsive Design - Global Adjustments
-   ============================ */
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    h1, h2, h3 {
-        text-align: center;
-    }
-
-    .container {
-        padding: 5px;
     }
 }
