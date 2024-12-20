@@ -1,4 +1,6 @@
-/* Footer */
+/* ============================
+   Styles pour le Footer
+============================ */
 footer {
     background-color: var(--white);
     color: var(--dark-gray);
@@ -8,6 +10,9 @@ footer {
     font-size: 14px;
 }
 
+/* ============================
+   Navigation dans le Footer
+============================ */
 footer nav {
     margin-top: 10px;
 }
