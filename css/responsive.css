@@ -69,9 +69,9 @@
     }
 
     .contact-form-section {
-        max-width: 100%;           /* Utilise toute la largeur disponible */
-        padding: 10px;             /* Réduit le padding */
-        margin: 10px;              /* Réduit la marge */
+        max-width: 90%;           /* Utilise toute la largeur disponible */
+        padding: 15px;             /* Réduit le padding */
+        margin: 20px auto;              /* Réduit la marge */
     }
 
     .contact-form-section h2 {
@@ -95,8 +95,9 @@
     }
 
     .contact-form-section {
-        padding: 0.8rem;           /* Réduit encore le padding */
-        margin: 0.5rem;            /* Réduit la marge */
+        max-width: 95%;          /* Utiliser presque toute la largeur de l'écran */
+        padding: 10px;           /* Réduire davantage le padding */
+        margin: 10px auto;       /* Ajuster la marge pour centrer correctement */
     }
 
     .contact-form-section h2 {
@@ -105,13 +106,13 @@
 
     form input,
     form textarea {
-        font-size: 0.8rem;         /* Champs plus petits */
-        padding: 0.5rem;           /* Réduit le padding des champs */
+        font-size: 14px;         /* Réduire la taille de police pour les champs */
+        padding: 8px;            /* Réduire le padding des champs */
     }
 
     button.cta-button {
-        padding: 0.5rem;           /* Bouton plus petit */
-        font-size: 14px;
+        font-size: 14px;         /* Adapter la taille de police du bouton */
+        padding: 12px;           /* Ajuster le padding du bouton */
     }
 
     .intro h1 {
