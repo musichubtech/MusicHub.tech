@@ -1,4 +1,6 @@
-/* Palette de couleurs sobre */
+/* ============================
+   Palette de Couleurs Sobre
+   ============================ */
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -8,7 +10,9 @@
     --hover-color: #022DAD;
 }
 
-/* Style général du corps */
+/* ============================
+   Styles Généraux du Corps
+   ============================ */
 body {
     background-color: var(--white);
     color: var(--dark-gray);
@@ -20,7 +24,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Liens */
+/* ============================
+   Liens Globaux
+   ============================ */
 a {
     color: var(--accent-color);
     text-decoration: none;
@@ -33,258 +39,19 @@ a:hover {
     text-decoration: none;
 }
 
-/* Header */
-header {
-    background-color: var(--white);
-    border-bottom: 1px solid var(--light-gray);
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header a.logo-link {
-    display: inline-block;
-}
-
-header img {
-    height: 50px;
-    width: auto;
-    margin-right: auto;
-}
-
-header nav {
-    display: flex;
-    gap: 20px;
-    margin-left: auto;
-}
-
-header nav a {
-    color: var(--dark-gray);
-    font-weight: 500;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: var(--hover-color);
-}
-
-/* Section Héros */
-.hero {
-    background-color: var(--light-gray);
-    padding: 80px 20px;
-    text-align: center;
-    border-bottom: 1px solid var(--light-gray);
-}
-
-.hero h1 {
-    font-size: 48px;
+/* ============================
+   Titres Globaux
+   ============================ */
+h1, h2, h3 {
     color: var(--black);
-    margin-bottom: 20px;
-    font-weight: bold;
+    margin-top: 0;
 }
 
-.hero p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 30px;
-    color: var(--dark-gray);
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--white);
-    padding: 14px 28px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
-}
-
-.cta-button:hover {
-    background-color: var(--hover-color);
-    color: var(--white);
-}
-
-/* Section de présentation */
-.intro {
-    padding: 60px 20px;
-    text-align: center;
-    max-width: 800px;
+/* ============================
+   Conteneur Global
+   ============================ */
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-.intro h2 {
-    font-size: 36px;
-    color: var(--black);
-    margin-bottom: 20px;
-}
-
-.intro p {
-    font-size: 18px;
-    color: var(--dark-gray);
-    line-height: 1.8;
-}
-
-/* Points forts */
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-    background-color: var(--white);
-}
-
-.feature {
-    flex: 1 1 300px;
-    max-width: 300px;
-    text-align: center;
     padding: 20px;
-    background-color: var(--light-gray);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
 }
-
-.feature:hover {
-    transform: translateY(-10px);
-}
-
-.feature h3 {
-    font-size: 24px;
-    color: var(--black);
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 16px;
-    color: var(--dark-gray);
-}
-
-/* CTA Secondaire */
-.cta-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: var(--light-gray);
-}
-
-.cta-section h2 {
-    font-size: 32px;
-    color: var(--black);
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: var(--white);
-    color: var(--dark-gray);
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid var(--light-gray);
-    font-size: 14px;
-}
-
-footer nav {
-    margin-top: 10px;
-}
-
-footer nav a {
-    margin: 0 10px;
-    font-size: 14px;
-    color: var(--dark-gray);
-}
-
-footer nav a:hover {
-    color: var(--hover-color);
-}
-
-
-/* Menu Hamburger Icon */
-.menu-icon {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    padding: 10px;
-    background-color: var(--accent-color);
-    color: var(--white);
-    border-radius: 5px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
-}
-
-.menu-icon:hover {
-    background-color: var(--hover-color);
-}
-
-/* Navigation Menu */
-.nav-menu {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-menu ul li a {
-    color: var(--dark-gray);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-/* Cacher le menu par défaut sur mobile */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-menu ul {
-        display: none;
-        flex-direction: column;
-        background-color: var(--white);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
-
-    .nav-menu ul.show {
-        display: flex;
-    }
-
-    .nav-menu ul li {
-        text-align: center;
-        padding: 15px;
-        border-bottom: 1px solid var(--light-gray);
-    }
-}
-
-/* Navigation Menu - Version Desktop */
-header nav {
-    display: flex;
-}
-
-/* Cacher le menu principal sur mobile */
-@media (max-width: 768px) {
-    header nav {
-        display: none;
-}
-
-
