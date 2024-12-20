@@ -6,8 +6,10 @@
     <title>Contact - MusicHub.tech</title>
     <meta name="description" content="Contact MusicHub.tech to ask questions, share suggestions, or collaborate. Reach out via our contact form or social channels.">
     <meta name="keywords" content="contact MusicHub.tech, musician support, AI tools, blockchain solutions, music technology">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact-style.css">
+    <!-- Lien vers le CSS principal -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Lien vers le CSS spécifique à la page Contact -->
+    <link rel="stylesheet" href="css/contact-style.css">
     <!-- Favicon -->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
@@ -58,5 +60,30 @@
             <a href="terms.html">Terms of Service</a>
         </nav>
     </footer>
+
+    <!-- Bouton Menu Hamburger -->
+<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menu Navigation -->
+<nav class="nav-menu" id="navMenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="apps.html">Applications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<script src="scripts/hamburger-menu.js"></script>
+    <script>
+    function toggleMenu() {
+        const navMenu = document.getElementById('navMenu').querySelector('ul');
+        if (navMenu) {
+            console.log('Menu trouvé');
+            navMenu.classList.toggle('show');
+        } else {
+            console.error('Menu non trouvé');
+        }
+    }
+</script>
 </body>
 </html>
