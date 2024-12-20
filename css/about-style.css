@@ -1,7 +1,4 @@
-/* ============================
-   About Page Styles
-   ============================ */
-
+/* Main Content - Specific to About Page */
 .about-page main {
     max-width: 1200px;
     margin: 80px auto;
@@ -14,6 +11,7 @@
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--black);
+    text-align: center;
 }
 
 .about-page section {
@@ -26,6 +24,7 @@
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--black);
+    text-align: center;
 }
 
 .about-page p {
@@ -42,7 +41,7 @@
     font-weight: 600;
 }
 
-/* Our Key Focus Areas */
+/* Our Key Focus Areas - Specific to About Page */
 .about-page .offer-section {
     display: flex;
     flex-direction: column;
@@ -51,6 +50,13 @@
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 60px;
+}
+
+.about-page .offer-section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 20px;
 }
 
 .about-page .offer {
@@ -66,14 +72,14 @@
     background: var(--light-gray);
     padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px var(--shadow-color);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-page .offer-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px var(--shadow-color);
 }
 
 .about-page .offer-item .emoji {
@@ -96,7 +102,31 @@
     margin: 0;
 }
 
-/* CTA Button */
+/* Why MusicHub.tech Section */
+.about-page .why-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.about-page .why-section li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: var(--dark-gray);
+}
+
+.about-page .why-section li::before {
+    content: '➔'; /* Flèche bleue */
+    color: var(--accent-color);
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* CTA Button - Specific to About Page */
 .about-page .cta-button {
     display: inline-block;
     background: var(--accent-color);
@@ -112,4 +142,27 @@
 
 .about-page .cta-button:hover {
     background-color: var(--hover-color);
+}
+
+/* Get Started Section with Gray Background */
+.about-page .get-started {
+    background: var(--light-gray);
+    padding: 20px 20px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-page .get-started h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.about-page .get-started p {
+    font-size: 1em;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
 }
