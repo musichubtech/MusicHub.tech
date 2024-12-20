@@ -361,3 +361,40 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* Improved "Try AIVA Now" section */
+.cta {
+    background: linear-gradient(135deg, #0077cc, #00aaff);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    margin: 2rem 0;
+    box-shadow: 0 8px 20px rgba(0, 119, 204, 0.2);
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #0077cc;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #00aaff;
+    color: #fff;
+    transform: translateY(-3px);
+}
