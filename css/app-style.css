@@ -23,34 +23,53 @@
     text-align: center;
 }
 
-/* Filters Navigation */
+/* ============================
+   Filters Navigation
+   ============================ */
+
 .filter {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;          /* Permet aux boutons de passer à la ligne si nécessaire */
     gap: 15px;
     margin: 2rem 0;
+    padding: 10px;
+    background-color: var(--light-gray); /* Fond gris pour les filtres */
+    border-radius: 10px;                 /* Coins arrondis pour un design plus doux */
+    max-width: 800px;                    /* Limiter la largeur des filtres */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .filter button {
     padding: 10px 20px;
-    background: var(--filter-bg);
+    background: var(--white);            /* Fond blanc pour les boutons */
     color: var(--dark-gray);
-    border: none;
+    border: 1px solid var(--light-gray); /* Bordure légère pour les boutons */
     cursor: pointer;
     border-radius: 20px;
     font-size: 1rem;
     font-weight: 600;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s, border 0.3s;
 }
 
 .filter button:hover {
     background: var(--accent-color);
     color: var(--white);
+    border: 1px solid var(--accent-color);
 }
 
 .filter button:focus {
     background: var(--hover-color);
     color: var(--white);
+    border: 1px solid var(--hover-color);
+}
+
+/* Style pour le bouton actif */
+.filter button.active {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: 1px solid var(--accent-color);
 }
 
 /* Style pour le bouton actif */
