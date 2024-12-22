@@ -33,23 +33,8 @@
         <section class="app-section">
             <h1>Explorez nos Applications</h1>
             <p>Des outils innovants pour transformer votre carrière musicale grâce à l'IA et la blockchain.</p>
-            <div class="app-grid">
-                <!-- Exemple de carte d'application -->
-                <div class="app-card">
-                    <img src="assets/audius-logo.png" alt="Audius">
-                    <h3>Audius</h3>
-                    <p>Stream de musique décentralisé.</p>
-                    <a href="https://audius.co" target="_blank">Découvrir</a>
-                </div>
-
-                <div class="app-card">
-                    <img src="assets/rocki-logo.png" alt="ROCKI">
-                    <h3>ROCKI</h3>
-                    <p>Musique et NFT pour les artistes.</p>
-                    <a href="https://rocki.com" target="_blank">Découvrir</a>
-                </div>
-
-                <!-- Ajouter plus de cartes selon vos besoins -->
+            <div class="app-grid" id="app-grid">
+                <!-- Les applications seront insérées ici dynamiquement -->
             </div>
         </section>
     </main>
@@ -62,44 +47,46 @@
             <a href="#">Terms of Service</a>
         </nav>
     </footer>
+
+    <!-- Script JavaScript -->
     <script>
-    fetch('assets/data/applications_data.json') // Chemin relatif au fichier JSON
-    .then(response => response.json())
-    .then(data => {
-        const appGrid = document.getElementById("app-grid");
+        fetch('assets/data/applications_data.json') // Chemin relatif au fichier JSON
+            .then(response => response.json())
+            .then(data => {
+                const appGrid = document.getElementById("app-grid");
 
-        // Parcourir les catégories et ajouter des blocs
-        Object.keys(data).forEach(category => {
-            // Titre de catégorie
-            const categoryTitle = document.createElement("h2");
-            categoryTitle.textContent = category;
-            categoryTitle.classList.add("category-title");
-            appGrid.appendChild(categoryTitle);
+                // Parcourir les catégories et ajouter des blocs
+                Object.keys(data).forEach(category => {
+                    // Titre de catégorie
+                    const categoryTitle = document.createElement("h2");
+                    categoryTitle.textContent = category;
+                    categoryTitle.classList.add("category-title");
+                    appGrid.appendChild(categoryTitle);
 
-            // Conteneur pour les applications
-            const categoryContainer = document.createElement("div");
-            categoryContainer.classList.add("category-container");
+                    // Conteneur pour les applications
+                    const categoryContainer = document.createElement("div");
+                    categoryContainer.classList.add("category-container");
 
-            data[category].forEach(app => {
-                const description = app['Description'] || 'Description non disponible';
-                const url = app['URL'] && app['URL'] !== 'NaN' ? app['URL'] : '#';
+                    data[category].forEach(app => {
+                        const description = app['Description'] || 'Description non disponible';
+                        const url = app['URL'] && app['URL'] !== 'NaN' ? app['URL'] : '#';
 
-                const appCard = document.createElement("div");
-                appCard.classList.add("app-card");
+                        const appCard = document.createElement("div");
+                        appCard.classList.add("app-card");
 
-                appCard.innerHTML = `
-                    <h3>${app['Application Name']}</h3>
-                    <p>${description}</p>
-                    <a href="${url}" target="_blank" ${url === '#' ? 'style="pointer-events: none; opacity: 0.6;"' : ''}>Voir Plus</a>
-                `;
+                        appCard.innerHTML = `
+                            <h3>${app['Application Name']}</h3>
+                            <p>${description}</p>
+                            <a href="${url}" target="_blank" ${url === '#' ? 'style="pointer-events: none; opacity: 0.6;"' : ''}>Voir Plus</a>
+                        `;
 
-                categoryContainer.appendChild(appCard);
-            });
+                        categoryContainer.appendChild(appCard);
+                    });
 
-            appGrid.appendChild(categoryContainer);
-        });
-    })
-    .catch(error => console.error("Erreur lors du chargement des données :", error));
-        <script>
+                    appGrid.appendChild(categoryContainer);
+                });
+            })
+            .catch(error => console.error("Erreur lors du chargement des données :", error));
+    </script>
 </body>
 </html>
