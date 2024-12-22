@@ -33,6 +33,17 @@
         <section class="app-section">
             <h1>Explorez nos Applications</h1>
             <p>Des outils innovants pour transformer votre carrière musicale grâce à l'IA et la blockchain.</p>
+            
+            <!-- Navigation par catégories -->
+            <nav class="category-nav">
+                <button data-category="all" class="active">Toutes</button>
+                <button data-category="blockchain">Blockchain</button>
+                <button data-category="audio">Audio</button>
+                <button data-category="composition">Composition</button>
+                <!-- Ajoutez plus de catégories ici -->
+            </nav>
+            
+            <!-- Grille des applications -->
             <div class="app-grid" id="app-grid">
                 <!-- Les applications seront insérées ici dynamiquement -->
             </div>
@@ -50,43 +61,59 @@
 
     <!-- Script JavaScript -->
     <script>
-        fetch('assets/data/applications_data.json') // Chemin relatif au fichier JSON
-            .then(response => response.json())
-            .then(data => {
-                const appGrid = document.getElementById("app-grid");
+        document.addEventListener("DOMContentLoaded", () => {
+            const appGrid = document.getElementById("app-grid");
+            const categoryButtons = document.querySelectorAll(".category-nav button");
 
-                // Parcourir les catégories et ajouter des blocs
-                Object.keys(data).forEach(category => {
-                    // Titre de catégorie
-                    const categoryTitle = document.createElement("h2");
-                    categoryTitle.textContent = category;
-                    categoryTitle.classList.add("category-title");
-                    appGrid.appendChild(categoryTitle);
+            fetch('assets/data/applications_data.json') // Chemin relatif au fichier JSON
+                .then(response => response.json())
+                .then(data => {
+                    let allApps = [];
 
-                    // Conteneur pour les applications
-                    const categoryContainer = document.createElement("div");
-                    categoryContainer.classList.add("category-container");
-
-                    data[category].forEach(app => {
-                        const description = app['Description'] || 'Description non disponible';
-                        const url = app['URL'] && app['URL'] !== 'NaN' ? app['URL'] : '#';
-
-                        const appCard = document.createElement("div");
-                        appCard.classList.add("app-card");
-
-                        appCard.innerHTML = `
-                            <h3>${app['Application Name']}</h3>
-                            <p>${description}</p>
-                            <a href="${url}" target="_blank" ${url === '#' ? 'style="pointer-events: none; opacity: 0.6;"' : ''}>Voir Plus</a>
-                        `;
-
-                        categoryContainer.appendChild(appCard);
+                    // Charger toutes les applications dans un tableau unique
+                    Object.keys(data).forEach(category => {
+                        data[category].forEach(app => {
+                            allApps.push({ ...app, category });
+                        });
                     });
 
-                    appGrid.appendChild(categoryContainer);
+                    // Afficher toutes les applications par défaut
+                    displayApps("all", allApps);
+
+                    // Gestion du filtre par catégorie
+                    categoryButtons.forEach(button => {
+                        button.addEventListener("click", () => {
+                            categoryButtons.forEach(btn => btn.classList.remove("active"));
+                            button.classList.add("active");
+                            displayApps(button.dataset.category, allApps);
+                        });
+                    });
+                })
+                .catch(error => console.error("Erreur lors du chargement des données :", error));
+
+            // Fonction pour afficher les applications
+            function displayApps(category, apps) {
+                appGrid.innerHTML = "";
+                const filteredApps = category === "all" ? apps : apps.filter(app => app.category.toLowerCase() === category);
+
+                filteredApps.forEach(app => {
+                    const description = app['Description'] || 'Description non disponible';
+                    const url = app['URL'] && app['URL'] !== 'NaN' ? app['URL'] : '#';
+                    
+                    const appCard = document.createElement("div");
+                    appCard.classList.add("app-card");
+
+                    appCard.innerHTML = `
+                        <img src="assets/${app['Application Name'].toLowerCase().replace(/\s+/g, '-')}-logo.png" alt="${app['Application Name']}">
+                        <h3>${app['Application Name']}</h3>
+                        <p>${description}</p>
+                        <a href="${url}" target="_blank" ${url === '#' ? 'style="pointer-events: none; opacity: 0.6;"' : ''}>Voir Plus</a>
+                    `;
+
+                    appGrid.appendChild(appCard);
                 });
-            })
-            .catch(error => console.error("Erreur lors du chargement des données :", error));
+            }
+        });
     </script>
 </body>
 </html>
