@@ -1,131 +1,66 @@
-/* Section Applications */
-.app-section {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #f8f9fc, #ffffff); /* Dégradé subtil */
-    color: #333;
+/* Section principale */
+.main-section {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #121212;
 }
 
-.app-section h1 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #0033cc;
-    margin-bottom: 1.5rem;
-}
-
-.app-section p {
-    font-size: 1.3rem;
-    color: #555;
-    margin-bottom: 2.5rem;
+.center-screen {
+    background: #1f1f1f;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Grille des applications */
 .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-/* Carte individuelle */
-.app-card {
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    padding: 2rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.app-card:hover {
-    transform: translateY(-10px); /* Effet d'élévation */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Image */
-.app-card img {
-    width: 120px; /* Image plus grande */
-    height: auto;
-    margin-bottom: 1.5rem;
-    transition: transform 0.4s;
-}
-
-.app-card:hover img {
-    transform: scale(1.1); /* Zoom au survol */
-}
-
-/* Titre */
-.app-card h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 0.7rem;
-    color: #0033cc;
-}
-
-/* Description */
-.app-card p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-/* Bouton */
-.app-card a {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    border-radius: 12px;
-    background-color: #0066ff;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.app-card a:hover {
-    background-color: #0033cc;
-    transform: translateY(-2px);
-}
-
-/* Titres des catégories */
-.category-title {
-    font-size: 2.2rem;
-    color: #0033cc;
-    margin: 3rem 0 2rem;
-    text-align: left;
-    padding-left: 1rem;
-    border-left: 4px solid #0033cc; /* Bordure décorative */
-    font-weight: bold;
-}
-
-/* Conteneur des catégories */
-.category-container {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
-/* Footer */
-footer {
+/* Cartes d'applications */
+.app-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 1.5rem;
     text-align: center;
-    padding: 3rem;
-    background-color: #f0f0f0;
-    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-footer nav a {
-    color: #0033cc;
-    text-decoration: none;
-    margin: 0 1rem;
+.app-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.app-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.app-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.app-card p {
     font-size: 1rem;
+    color: #aaaaaa;
+    margin-bottom: 1rem;
 }
 
-footer nav a:hover {
-    color: #0066ff;
+.app-card a {
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.app-card a:hover {
     text-decoration: underline;
 }
