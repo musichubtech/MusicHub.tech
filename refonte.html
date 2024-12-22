@@ -62,5 +62,39 @@
             <a href="#">Terms of Service</a>
         </nav>
     </footer>
+    <script>
+    fetch('assets/data/applications_data.json') // Chemin relatif au fichier JSON
+        .then(response => response.json())
+        .then(data => {
+            const appGrid = document.getElementById("app-grid");
+
+            // Parcourir les catégories et ajouter des blocs
+            Object.keys(data).forEach(category => {
+                const categoryTitle = document.createElement("h2");
+                categoryTitle.textContent = category;
+                categoryTitle.classList.add("category-title");
+                appGrid.appendChild(categoryTitle);
+
+                const categoryContainer = document.createElement("div");
+                categoryContainer.classList.add("category-container");
+
+                data[category].forEach(app => {
+                    const appCard = document.createElement("div");
+                    appCard.classList.add("app-card");
+
+                    appCard.innerHTML = `
+                        <h3>${app['Application Name']}</h3>
+                        <p>${app['Description']}</p>
+                        <a href="${app['URL']}" target="_blank">Voir Plus</a>
+                    `;
+
+                    categoryContainer.appendChild(appCard);
+                });
+
+                appGrid.appendChild(categoryContainer);
+            });
+        })
+        .catch(error => console.error("Erreur lors du chargement des données :", error));
+</script>
 </body>
 </html>
