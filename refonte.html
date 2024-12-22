@@ -6,16 +6,13 @@
     <meta name="description" content="Découvrez des outils IA et blockchain pour musiciens">
     <meta name="keywords" content="IA, blockchain, musique, outils technologiques">
     <title>Refonte Design - MusicHub.tech</title>
-    <!-- Fichiers de styles existants -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!-- Fichier spécifique refonte.css -->
     <link rel="stylesheet" href="css/refonte.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Header global -->
     <header>
         <a href="index.html" class="logo-link">
             <img src="assets/logo.png" alt="MusicHub.tech Logo" width="100">
@@ -28,7 +25,6 @@
         </nav>
     </header>
 
-    <!-- Section principale des applications -->
     <main>
         <section class="app-section">
             <h1>Explorez nos Applications</h1>
@@ -40,7 +36,7 @@
                 <button data-category="blockchain">Blockchain</button>
                 <button data-category="audio">Audio</button>
                 <button data-category="composition">Composition</button>
-                <!-- Ajoutez plus de catégories ici -->
+                <!-- Ajouter d'autres catégories ici -->
             </nav>
             
             <!-- Grille des applications -->
@@ -50,7 +46,6 @@
         </section>
     </main>
 
-    <!-- Footer global -->
     <footer>
         <p>&copy; 2024 MusicHub.tech. Tous droits réservés.</p>
         <nav>
@@ -59,18 +54,17 @@
         </nav>
     </footer>
 
-    <!-- Script JavaScript -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const appGrid = document.getElementById("app-grid");
             const categoryButtons = document.querySelectorAll(".category-nav button");
 
-            fetch('assets/data/applications_data.json') // Chemin relatif au fichier JSON
+            fetch('assets/data/applications_data.json')
                 .then(response => response.json())
                 .then(data => {
                     let allApps = [];
 
-                    // Charger toutes les applications dans un tableau unique
+                    // Charger toutes les applications
                     Object.keys(data).forEach(category => {
                         data[category].forEach(app => {
                             allApps.push({ ...app, category });
@@ -80,7 +74,7 @@
                     // Afficher toutes les applications par défaut
                     displayApps("all", allApps);
 
-                    // Gestion du filtre par catégorie
+                    // Gestion du filtrage
                     categoryButtons.forEach(button => {
                         button.addEventListener("click", () => {
                             categoryButtons.forEach(btn => btn.classList.remove("active"));
@@ -91,7 +85,6 @@
                 })
                 .catch(error => console.error("Erreur lors du chargement des données :", error));
 
-            // Fonction pour afficher les applications
             function displayApps(category, apps) {
                 appGrid.innerHTML = "";
                 const filteredApps = category === "all" ? apps : apps.filter(app => app.category.toLowerCase() === category);
@@ -99,12 +92,13 @@
                 filteredApps.forEach(app => {
                     const description = app['Description'] || 'Description non disponible';
                     const url = app['URL'] && app['URL'] !== 'NaN' ? app['URL'] : '#';
-                    
+                    const logo = `assets/${app['Application Name'].toLowerCase().replace(/\s+/g, '-')}-logo.png`;
+
                     const appCard = document.createElement("div");
                     appCard.classList.add("app-card");
 
                     appCard.innerHTML = `
-                        <img src="assets/${app['Application Name'].toLowerCase().replace(/\s+/g, '-')}-logo.png" alt="${app['Application Name']}">
+                        <img src="${logo}" alt="${app['Application Name']}" onerror="this.src='assets/placeholder-logo.png';">
                         <h3>${app['Application Name']}</h3>
                         <p>${description}</p>
                         <a href="${url}" target="_blank" ${url === '#' ? 'style="pointer-events: none; opacity: 0.6;"' : ''}>Voir Plus</a>
