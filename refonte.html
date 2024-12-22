@@ -62,39 +62,42 @@
             <a href="#">Terms of Service</a>
         </nav>
     </footer>
-    <script>
     fetch('assets/data/applications_data.json') // Chemin relatif au fichier JSON
-        .then(response => response.json())
-        .then(data => {
-            const appGrid = document.getElementById("app-grid");
+    .then(response => response.json())
+    .then(data => {
+        const appGrid = document.getElementById("app-grid");
 
-            // Parcourir les catégories et ajouter des blocs
-            Object.keys(data).forEach(category => {
-                const categoryTitle = document.createElement("h2");
-                categoryTitle.textContent = category;
-                categoryTitle.classList.add("category-title");
-                appGrid.appendChild(categoryTitle);
+        // Parcourir les catégories et ajouter des blocs
+        Object.keys(data).forEach(category => {
+            // Titre de catégorie
+            const categoryTitle = document.createElement("h2");
+            categoryTitle.textContent = category;
+            categoryTitle.classList.add("category-title");
+            appGrid.appendChild(categoryTitle);
 
-                const categoryContainer = document.createElement("div");
-                categoryContainer.classList.add("category-container");
+            // Conteneur pour les applications
+            const categoryContainer = document.createElement("div");
+            categoryContainer.classList.add("category-container");
 
-                data[category].forEach(app => {
-                    const appCard = document.createElement("div");
-                    appCard.classList.add("app-card");
+            data[category].forEach(app => {
+                const description = app['Description'] || 'Description non disponible';
+                const url = app['URL'] && app['URL'] !== 'NaN' ? app['URL'] : '#';
 
-                    appCard.innerHTML = `
-                        <h3>${app['Application Name']}</h3>
-                        <p>${app['Description']}</p>
-                        <a href="${app['URL']}" target="_blank">Voir Plus</a>
-                    `;
+                const appCard = document.createElement("div");
+                appCard.classList.add("app-card");
 
-                    categoryContainer.appendChild(appCard);
-                });
+                appCard.innerHTML = `
+                    <h3>${app['Application Name']}</h3>
+                    <p>${description}</p>
+                    <a href="${url}" target="_blank" ${url === '#' ? 'style="pointer-events: none; opacity: 0.6;"' : ''}>Voir Plus</a>
+                `;
 
-                appGrid.appendChild(categoryContainer);
+                categoryContainer.appendChild(appCard);
             });
-        })
-        .catch(error => console.error("Erreur lors du chargement des données :", error));
-</script>
+
+            appGrid.appendChild(categoryContainer);
+        });
+    })
+    .catch(error => console.error("Erreur lors du chargement des données :", error));
 </body>
 </html>
